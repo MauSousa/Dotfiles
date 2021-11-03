@@ -15,7 +15,7 @@ style = "119"
 # Python
 [python]
 symbol = " "
-style = "bold 123"
+style = "123"
 
 # Directory
 [directory]
@@ -23,7 +23,7 @@ truncation_length = 8
 truncate_to_repo = false
 style = "bold 117"
 read_only = " "
-home_symbol = ""
+home_symbol = " "
 #home_symbol = "ξ"
 #home_symbol = " "
 
@@ -32,8 +32,13 @@ home_symbol = ""
 symbol = " "
 style = "189"
 
+# Git Branch
+[git_branch]
+style = "bold 9"
+
 # Git Status
 [git_status]
+style = "117"
 conflicted = "🏳"
 ahead = "🏎💨"
 behind = "😰"
