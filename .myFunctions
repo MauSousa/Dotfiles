@@ -1,0 +1,156 @@
+# Fuction to compile and execute cpp programs
+function compile-cpp(){
+    local obj="${1}.cpp"
+    local name="${2}"
+    g++ "$obj" -o "$name"
+    ./"$name"
+}
+
+# Function to compile and execute c programs
+function compilar-c(){
+    local file="${1}.c"
+    local name="${2}"
+    g++ "$file" -o "$name"
+    ./"$name"
+}
+
+# Function to compile java programs
+function compilar-java(){
+		javac "$1"
+}
+
+# Function to create and enter a directory
+function crear-entrar(){
+    local directorio="${1}"
+    mkdir "$directorio"
+    cd "$directorio"
+}
+
+# Function to add and commit in git
+function gaddm(){
+	git add .
+	local comentatrio="${1}"
+	git commit -m "$comentatrio"
+}
+
+# Function to add and commit README
+function gaddreadme(){
+	local comentary="First commit"
+	local readme="README.md"
+	git add "$readme"
+	git commit -m "$comentary"
+}
+
+# Function to add a file to git
+function gaddf(){
+	local archive="${1}"
+	local commentary="${2}"
+	git add "$archive"
+	git commit -m "${commentary}"
+}
+
+# Function to create a branch and move
+function gchk() {
+	git checkout -b $1
+} 
+
+# Function to delete branch
+function gdel() {
+	git branch -d $1
+}
+
+# Function to merge branches
+function gmrg() {
+	git merge $1
+}
+
+# Function for MySQL
+function entrarSql() {
+	local user="${1}"
+	mysql -u "$user" -p
+}
+
+# Function to make the first push to GitHub
+function gthb() {
+	local url="${1}"
+	git remote add origin "$url"
+	git branch -M main
+	git push -u origin main
+}
+
+# Function for timing tree command over /
+function trz() {
+	local dirName="${1}"
+	time tree "$dirName"
+}
+
+# Function to start a new tmux session
+#function tsm() {
+#	tmux new -s $1
+#}
+
+# Function to delete files
+function rmk() {
+	scrub -p dod $1
+	shred -zun 10 -v $1
+}
+
+# Function to copy and push dotfiles to repository
+function cdf() {
+ cp ~/.zshrc ~/.zshenv /home/$USER/Documents/dotfiles/zsh-arch; cp ~/.vimrc /home/$USER/Documents/dotfiles/vim-arch; cp ~/.config/alacritty/alacritty.yml /home/$USER/Documents/dotfiles/alacritty-arch; cp ~/.mongoshrc.js /home/$USER/Documents/dotfiles/mongo-arch; cp ~/.config/lsd/config.yaml /home/$USER/Documents/dotfiles/lsd-arch; cp ~/.config/nvim/init.vim /home/$USER/Documents/dotfiles/nvim-arch; cp ~/.starship/config.toml /home/$USER/Documents/dotfiles/starship-arch
+}
+
+# Function to run go programs
+function gr() {
+	go run $1
+}
+
+# Function to build executable go programs
+function gb() {
+	go build $1
+}
+
+# Function to copy bspwm config, polybar, sxhkdrc
+function cbc {
+	cp -r ~/.config/bspwm ~/.config/sxhkd	~/.config/polybar ~/.config/bin ~/Pictures /home/augusto/Documents/dotfiles/bspwm-arch
+}
+
+# Function to copy the content of a go file and write it in another file
+function cps() {
+	cat $1 > $2
+	vi $2
+}
+
+# Function to init go module
+function gmod() {
+	go mod init $1
+}
+
+# Function to create and activate python virtual env 
+function pyenv() {
+	python3 -m venv $1
+	source $1/bin/activate
+}
+
+# Function to kill Discord process
+function kd() {
+	killall Discord 2>/dev/null
+	killall Discord 2>/dev/null
+	killall Discord 2>/dev/null
+	killall Discord 2>/dev/null
+}
+
+# Function to run TS files with Deno
+function dr() {
+	deno run $1
+}
+
+# Function to bundle TS file
+function dnb() {
+	deno bundle $1 $2
+}
+
+# Function to remove directories
+function rd() {
+  rm -rf $1
+}

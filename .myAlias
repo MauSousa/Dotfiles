@@ -1,0 +1,64 @@
+# Directorie related
+
+alias l="lsd --group-dirs=first"
+alias ll="lsd -h --group-dirs=first"
+alias la="lla"
+alias lla="lsd -lAh --group-dirs=first"
+alias ls="lsd -lAh --group-dirs=first"
+alias bcat="/usr/bin/bat"
+alias cat="/usr/bin/cat"
+alias vi="nvim"
+alias la="lsd -a --group-dirs=first"
+
+# System related
+alias cl="clear"
+alias cñ="cl"
+alias ck="cl"
+alias ..="cd .."
+alias actualizar="sudo pacman -Syu"
+alias apagar="shutdown -P now"
+alias reiniciar="shutdown -r now"
+alias cl="clear"
+alias cñ="cl"
+alias ck="cl"
+
+#  Git
+alias pull="git pull"
+alias push="git push"
+alias commit="git commit"
+alias add="git add"
+alias ginit="git init"
+alias gbr="git branch"
+alias gts="git s"
+
+# Npm
+alias start="npm start"
+alias build="npm run build"
+alias build:dev="npm run build:dev"
+
+# Tmux
+#alias pst="ps -e | grep "tmux""
+#alias tas="tmux attach-session"
+
+# Screenshot with flameshot
+alias flamegui="flameshot gui"
+
+# Golang
+alias gt="gr"
+alias gti="go mod tidy"
+
+# Python
+alias py="python3"
+#alias py3="python3.10"
+alias pipf="pip freeze"
+alias pipl="pip list"
+
+# Vite
+alias nrd="npm run dev"
+alias nrb="npm run build"
+alias vinit="npm init vite@latest"
+
+# Symfony
+alias sfs="symfony serve"
+alias sfsd="symfony serve -d"
+alias sfst="symfony serve:stop"
