@@ -55,11 +55,17 @@ module-margin-right = 2
 font-0 = fixed:pixelsize=15;1
 font-1 = unifont:fontformat=truetype:size=15:antialias=false;0
 font-2 = siji:pixelsize=20;1
+;font-3 = MesloLGSNF:pixelsize=12:0
+;font-4 = NotoColorEmoji:fontformat=truetype:scale=10:antialias=false;
+
+;font-0 = JetBrainsMonoMedium:pixelsize=10;
+;font-1 = HackNerdFont:pixelsize=10;
+;font-2 = NotoColorEmoji:fontformat=truetype:scale=10:antialias=false;
 
 modules-left = bspwm i3 
 modules-center = mpd
 ;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
-modules-right = backlight xkeyboard battery cpu temperature date powermenu
+modules-right = backlight xkeyboard battery temperature date 
 
 tray-position = right
 tray-padding = 2
@@ -105,12 +111,14 @@ module-margin-right = 2
 
 font-0 = fixed:pixelsize=12;1
 font-1 = unifont:fontformat=truetype:size=15:antialias=false;0
+#font-1 = unifont:fontformat=truetype:size=15:antialias=false;0
 font-2 = siji:pixelsize=17;1
+font-3 = MesloLGSNF:pixelsize=15:0
 
 modules-left = bspwm i3 xwindow 
 ;modules-center = mpd
 ;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
-modules-right = alsa ram_status cpu temperature eth date powermenu
+modules-right = alsa ram_status cpu eth date powermenu
 ;modules-right = alsa ram_status ram_total cpu temperature eth date powermenu
 
 tray-position = right
@@ -134,6 +142,7 @@ cursor-click = pointer
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:30:...%
+label-active-font = 5
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -308,7 +317,8 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = " "
+format-prefix = " "
+;format-prefix = " "
 format-prefix-foreground = ${colors.white}
 format-underline = #f90000
 label = %percentage:2%%
@@ -349,7 +359,7 @@ interface = enp2s0
 interval = 3.0
 
 format-connected-underline = #55aa55
-format-connected-prefix = " "
+format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.white}
 label-connected = %local_ip%
 
@@ -370,6 +380,7 @@ time = %H:%M:%S
 time-alt = %H:%M:%S
 
 format-prefix = 
+;format-prefix = 
 format-prefix-foreground = ${colors.white}
 format-underline = #0a6cf5
 
@@ -489,7 +500,8 @@ expand-right = true
 
 format-spacing = 1
 
-label-open = 
+label-open = 
+;label-open = 
 label-open-foreground = ${colors.secondary}
 label-close =  cancel
 label-close-foreground = ${colors.secondary}
@@ -514,9 +526,13 @@ menu-2-1-exec = menu-open-0
 [module/ram_status]
 type = custom/script
 interval = 2
-format-prefix = " "
+label-active-font = 5
+;format-prefix = "🧠 "
+format-prefix = " "
+;format-prefix = " "
 format-underline = #0a6cf5
 format-prefix-foreground = ${colors.white}
+;background = ${colors.white}
 exec = ~/.config/bin/ram_status.sh
 
 [settings]
