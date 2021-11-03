@@ -28,7 +28,7 @@ export DENO_INSTALL="/home/augusto/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
 # Laravel
-#export PATH="$PATH:/home/augusto/.config/composer/vendor/bin"
+export PATH="$PATH:/home/augusto/.config/composer/vendor/bin"
 
 # Symfony
 export PATH="$HOME/.symfony/bin:$PATH"
