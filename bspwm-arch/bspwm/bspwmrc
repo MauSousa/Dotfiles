@@ -4,7 +4,7 @@
 sxhkd &
 nm-applet &
 $HOME/.config/polybar/launch.sh
-feh --bg-fill /usr/share/backgrounds/bspwm/wall.png
+feh --bg-fill /usr/share/backgrounds/bspwm/wall.png -bg-fill ~/Pictures/arch.png
 picom .config/picom/picom.conf &
 
 bspc monitor eDP-1  -d 1 2 3 4  
