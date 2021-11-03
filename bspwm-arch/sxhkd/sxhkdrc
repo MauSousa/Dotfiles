@@ -12,7 +12,7 @@ super + shift + d
 
 # program launcher (Apps)
 super + d
-	rofi -show drun -theme fancy -icon-theme "Tela-circle" -show-icons
+	rofi -show drun -show-icons 
 
 # make sxhkd reload its configuration files:
 super + Escape
