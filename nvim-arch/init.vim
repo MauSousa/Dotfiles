@@ -52,6 +52,8 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'ryanoasis/vim-devicons'
+Plug 'https://github.com/rafi/awesome-vim-colorschemes'
 
 "*****************************************************************************
 "*****************************************************************************
@@ -693,4 +695,6 @@ if has('nvim')
 else
   inoremap <silent><expr> <c-@> coc#refresh()
 endif
+
+"inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 

@@ -27,6 +27,7 @@ primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
 white = #fff
+bar-background = #4a4846
 
 [bar/example]
 monitor = ${env:MONITOR:eDP-1} 
@@ -52,9 +53,9 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = fixed:pixelsize=15;1
+font-0 = fixed:pixelsize=17;1
 font-1 = unifont:fontformat=truetype:size=15:antialias=false;0
-font-2 = siji:pixelsize=20;1
+font-2 = siji:pixelsize=22;1
 ;font-3 = MesloLGSNF:pixelsize=12:0
 ;font-4 = NotoColorEmoji:fontformat=truetype:scale=10:antialias=false;
 
@@ -94,7 +95,7 @@ height = 30
 radius = 6.0
 fixed-center = false
 
-background = ${colors.background}
+background = ${colors.bar-background}
 foreground = ${colors.foreground}
 
 line-size = 3
@@ -109,7 +110,7 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = fixed:pixelsize=12;1
+font-0 = fixed:pixelsize=13;1
 font-1 = unifont:fontformat=truetype:size=15:antialias=false;0
 #font-1 = unifont:fontformat=truetype:size=15:antialias=false;0
 font-2 = siji:pixelsize=17;1
@@ -118,7 +119,7 @@ font-3 = MesloLGSNF:pixelsize=15:0
 modules-left = bspwm i3 xwindow 
 ;modules-center = mpd
 ;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
-modules-right = alsa ram_status cpu eth date powermenu
+modules-right = alsa kernel_info ram_status cpu eth date powermenu
 ;modules-right = alsa ram_status ram_total cpu temperature eth date powermenu
 
 tray-position = right
@@ -180,14 +181,15 @@ label-focused-padding = 2
 
 label-occupied = %name%
 label-occupied-padding = 2
+label-occupied-underline= ${colors.alert}
 
 label-urgent = %index%!
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
 label-empty = %name%
-label-empty-foreground = ${colors.foreground-alt}
-label-empty-padding = 2
+label-empty-foreground = ${colors.white}
+label-empty-padding = 3
 
 ; Separator in between workspaces
 ; label-separator = |
@@ -374,10 +376,10 @@ type = internal/date
 interval = 1
 
 date = "%d-%m-%Y"
-date-alt = "%d-%m-%Y"
+;date-alt = "%d-%m-%Y"
 
 time = %H:%M:%S
-time-alt = %H:%M:%S
+;time-alt = %H:%M:%S
 
 format-prefix = 
 ;format-prefix = 
@@ -530,10 +532,22 @@ label-active-font = 5
 ;format-prefix = "🧠 "
 format-prefix = " "
 ;format-prefix = " "
-format-underline = #0a6cf5
+format-underline = #1bb385
 format-prefix-foreground = ${colors.white}
 ;background = ${colors.white}
 exec = ~/.config/bin/ram_status.sh
+
+[module/kernel_info]
+type = custom/script
+interval = 2
+label-active-font = 5
+;format-prefix = "🧠 "
+format-prefix = " "
+;format-prefix = " "
+format-underline = #9e5913
+format-prefix-foreground = ${colors.white}
+;background = ${colors.white}
+exec = ~/.config/bin/kernel_info.sh
 
 [settings]
 screenchange-reload = true

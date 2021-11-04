@@ -4,14 +4,14 @@
 sxhkd &
 nm-applet &
 $HOME/.config/polybar/launch.sh
-feh --bg-fill /usr/share/backgrounds/bspwm/wall.png -bg-fill ~/Pictures/arch.png
+feh --bg-fill /usr/share/backgrounds/bspwm/wall.png -bg-fill ~/Pictures/wallpapers-master/0277.jpg
 picom .config/picom/picom.conf &
 
-bspc monitor eDP-1  -d 1 2 3 4  
-bspc monitor HDMI-1 -d 5 6 7 8 9 
+bspc monitor HDMI-1 -d 3 4 5 6 7 8 9 
+bspc monitor eDP-1  -d 1 2 
 
 bspc config border_width         3
-bspc config window_gap          10
+bspc config window_gap           10
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
