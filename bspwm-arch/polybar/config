@@ -28,6 +28,7 @@ secondary = #e60053
 alert = #bd2c40
 white = #fff
 bar-background = #4a4846
+empty = #808080
 
 [bar/example]
 monitor = ${env:MONITOR:eDP-1} 
@@ -56,12 +57,12 @@ module-margin-right = 2
 font-0 = fixed:pixelsize=17;1
 font-1 = unifont:fontformat=truetype:size=15:antialias=false;0
 font-2 = siji:pixelsize=22;1
+font-3 = NotoColorEmoji:fontformat=truetype:scale=7:antialias=false;
 ;font-3 = MesloLGSNF:pixelsize=12:0
 ;font-4 = NotoColorEmoji:fontformat=truetype:scale=10:antialias=false;
 
 ;font-0 = JetBrainsMonoMedium:pixelsize=10;
 ;font-1 = HackNerdFont:pixelsize=10;
-;font-2 = NotoColorEmoji:fontformat=truetype:scale=10:antialias=false;
 
 modules-left = bspwm i3 
 modules-center = mpd
@@ -111,15 +112,18 @@ module-margin-left = 1
 module-margin-right = 2
 
 font-0 = fixed:pixelsize=13;1
+;font-0 = fixed:pixelsize=13;1
 font-1 = unifont:fontformat=truetype:size=15:antialias=false;0
 #font-1 = unifont:fontformat=truetype:size=15:antialias=false;0
 font-2 = siji:pixelsize=17;1
 font-3 = MesloLGSNF:pixelsize=15:0
+;font-4 = Iosevka:pixelsize=15:0
+font-4 = NotoColorEmoji:fontformat=truetype:scale=7:antialias=false;
 
 modules-left = bspwm i3 xwindow 
 ;modules-center = mpd
 ;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
-modules-right = alsa kernel_info ram_status cpu eth date powermenu
+modules-right = alsa kernel_info packages ram_status cpu eth date powermenu
 ;modules-right = alsa ram_status ram_total cpu temperature eth date powermenu
 
 tray-position = right
@@ -150,6 +154,7 @@ type = internal/xkeyboard
 blacklist-0 = num lock
 
 format-prefix = " "
+; format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-prefix-underline = ${colors.secondary}
 
@@ -188,7 +193,7 @@ label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
 label-empty = %name%
-label-empty-foreground = ${colors.white}
+label-empty-foreground = ${colors.empty}
 label-empty-padding = 3
 
 ; Separator in between workspaces
@@ -250,6 +255,7 @@ type = internal/xbacklight
 
 format = <label> <bar>
 label = BL
+; label = BL
 
 bar-width = 10
 bar-indicator = |
@@ -295,7 +301,8 @@ format = <label>
 
 ; Available tokens:
 ;   %percentage% (default)
-label = BL: %percentage%%
+label = 💡 %percentage%%
+; label = BL: %percentage%%
 
 ; Only applies if <ramp> is used
 ;ramp-0 = 🌕
@@ -319,7 +326,9 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = " "
+format-prefix = "💻 "
+; format-prefix = "🧠 "
+;format-prefix = " "
 ;format-prefix = " "
 format-prefix-foreground = ${colors.white}
 format-underline = #f90000
@@ -381,7 +390,7 @@ date = "%d-%m-%Y"
 time = %H:%M:%S
 ;time-alt = %H:%M:%S
 
-format-prefix = 
+format-prefix = 🕒 
 ;format-prefix = 
 format-prefix-foreground = ${colors.white}
 format-underline = #0a6cf5
@@ -419,11 +428,13 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 type = internal/alsa
 
 format-volume = <label-volume> <bar-volume>
-label-volume = VOL %percentage%%
+label-volume = 🔊 %percentage%%
+; label-volume = VOL %percentage%%
 label-volume-foreground = ${root.foreground}
 
-format-muted-prefix = " "
-format-muted-foreground = ${colors.foreground-alt}
+format-muted-prefix = "🔇 "
+; format-muted-prefix = " "
+format-muted-foreground = ${colors.white}
 label-muted = sound muted
 
 bar-volume-width = 10
@@ -455,7 +466,8 @@ format-charging-underline = #ffb52a
 format-discharging = <animation-discharging> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
 
-format-full-prefix = " "
+format-full-prefix = "🔋 "
+; format-full-prefix = " "
 format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline = ${self.format-charging-underline}
 
@@ -487,12 +499,13 @@ format-warn = <ramp> <label-warn>
 format-warn-underline = ${self.format-underline}
 
 label = %temperature-c%
+; label = %temperature-c%
 label-warn = %temperature-c%
 label-warn-foreground = ${colors.secondary}
 
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
+ramp-0 = 🥵
+ramp-1 = 🥵
+ramp-2 = 🥵
 ramp-foreground = ${colors.white}
 
 [module/powermenu]
@@ -529,8 +542,8 @@ menu-2-1-exec = menu-open-0
 type = custom/script
 interval = 2
 label-active-font = 5
-;format-prefix = "🧠 "
-format-prefix = " "
+format-prefix = "🧠 "
+; format-prefix = " "
 ;format-prefix = " "
 format-underline = #1bb385
 format-prefix-foreground = ${colors.white}
@@ -548,6 +561,18 @@ format-underline = #9e5913
 format-prefix-foreground = ${colors.white}
 ;background = ${colors.white}
 exec = ~/.config/bin/kernel_info.sh
+
+[module/packages]
+type = custom/script
+interval = 2
+label-active-font = 5
+;format-prefix = "🧠 "
+format-prefix = "📦 "
+;format-prefix = " "
+format-underline = #5e2345
+format-prefix-foreground = ${colors.white}
+;background = ${colors.white}
+exec = ~/.config/bin/packages.sh
 
 [settings]
 screenchange-reload = true
