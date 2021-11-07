@@ -54,6 +54,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ryanoasis/vim-devicons'
 Plug 'https://github.com/rafi/awesome-vim-colorschemes'
+Plug 'http://github.com/tpope/vim-surround' " surrounding ysw
 
 "*****************************************************************************
 "*****************************************************************************
@@ -99,11 +100,6 @@ Plug 'jelera/vim-javascript-syntax'
 "" PHP Bundle
 Plug 'phpactor/phpactor', {'for': 'php', 'do': 'composer install --no-dev -o'}
 Plug 'stephpy/vim-php-cs-fixer'
-
-" python
-"" Python Bundle
-Plug 'davidhalter/jedi-vim'
-Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
 
 " typescript
 Plug 'leafgarland/typescript-vim'
@@ -572,17 +568,6 @@ augroup vimrc-python
       \ cinwords=if,elif,else,for,while,try,except,finally,def,class,with
 augroup END
 
-" jedi-vim
-let g:jedi#popup_on_dot = 0
-let g:jedi#goto_assignments_command = "<leader>g"
-let g:jedi#goto_definitions_command = "<leader>d"
-let g:jedi#documentation_command = "K"
-let g:jedi#usages_command = "<leader>n"
-let g:jedi#rename_command = "<leader>r"
-let g:jedi#show_call_signatures = "0"
-let g:jedi#completions_command = "<C-Space>"
-let g:jedi#smart_auto_mappings = 0
-
 " ale
 :call extend(g:ale_linters, {
     \'python': ['flake8'], })
@@ -696,5 +681,14 @@ else
   inoremap <silent><expr> <c-@> coc#refresh()
 endif
 
-"inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  elseif (coc#rpc#ready())
+    call CocActionAsync('doHover')
+  else
+    execute '!' . &keywordprg . " " . expand('<cword>')
+  endif
+endfunction
+"inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : <Tab>"
 
