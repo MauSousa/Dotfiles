@@ -372,7 +372,7 @@ interval = 3.0
 format-connected-underline = #55aa55
 format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.white}
-label-connected = %local_ip%
+label-connected = %local_ip%  
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
@@ -390,7 +390,8 @@ date = "%d-%m-%Y"
 time = %H:%M:%S
 ;time-alt = %H:%M:%S
 
-format-prefix = 🕒 
+format-prefix = ⏳
+; format-prefix = 🕒 
 ;format-prefix = 
 format-prefix-foreground = ${colors.white}
 format-underline = #0a6cf5
