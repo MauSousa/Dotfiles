@@ -696,3 +696,5 @@ function! s:show_documentation()
 endfunction
 "inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : <Tab>"
 
+" # Python
+let g:python3_host_prog = '/usr/bin/python3'
