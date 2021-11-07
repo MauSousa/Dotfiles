@@ -1,3 +1,3 @@
 # Arch Dotfiles
 
-# I use Arch btw 
+## Here goes arch dotfiles
