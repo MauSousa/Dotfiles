@@ -3,6 +3,10 @@ neofetch
 # Term
 export TERM="xterm-256color"
 
+# Doom Emacs
+export VISUAL="emacsclient -c -a emacs"
+export EDITOR="emacsclient -t -a ''"
+
 # History
 export HISTFILE=~/.zsh_history
 export HISTFILESIZE=20000
