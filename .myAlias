@@ -1,5 +1,4 @@
 # Directorie related
-
 alias l="lsd --group-dirs=first"
 alias ll="lsd -h --group-dirs=first"
 alias la="lla"
@@ -21,6 +20,14 @@ alias reiniciar="shutdown -r now"
 alias cl="clear"
 alias cñ="cl"
 alias ck="cl"
+
+# Doom Emacs
+#alias em="/usr/bin/emacs -nw"
+#alias emacs="emacsclient -c -a 'emacs'"
+#alias doomsync="~/.emacs.d/bin/doom sync"
+#alias doomdoctor="~/.emacs.d/bin/doom doctor"
+#alias doomupgrade="~/.emacs.d/bin/doom upgrade"
+#alias doompurge="~/.emacs.d/bin/doom purge"
 
 #  Git
 alias pull="git pull"

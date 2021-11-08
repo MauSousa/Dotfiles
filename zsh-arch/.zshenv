@@ -36,4 +36,5 @@ export PATH="$HOME/.symfony/bin:$PATH"
 # Browser
 export BROWSER=/opt/firefox/firefox
 
-
+# Doom Emacs
+export PATH="$HOME/.emacs.d/bin:$PATH"

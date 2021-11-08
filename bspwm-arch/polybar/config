@@ -116,7 +116,7 @@ font-0 = fixed:pixelsize=13;1
 font-1 = unifont:fontformat=truetype:size=15:antialias=false;0
 #font-1 = unifont:fontformat=truetype:size=15:antialias=false;0
 font-2 = siji:pixelsize=17;1
-font-3 = MesloLGSNF:pixelsize=15:0
+font-3 = MesloLGSNF:pixelsize=17:0
 ;font-4 = Iosevka:pixelsize=15:0
 font-4 = NotoColorEmoji:fontformat=truetype:scale=7:antialias=false;
 
@@ -147,7 +147,10 @@ cursor-click = pointer
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:30:...%
-label-active-font = 5
+; format-underline = ${colors.background}
+; format-background = ${colors.background}
+format-padding =
+; label-active-font = 5
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -370,7 +373,7 @@ interface = enp2s0
 interval = 3.0
 
 format-connected-underline = #55aa55
-format-connected-prefix = " "
+format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.white}
 label-connected = %local_ip%  
 

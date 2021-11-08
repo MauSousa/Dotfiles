@@ -153,3 +153,7 @@ ctrl + shift + d
 # Firefox Dev Edition
 ctrl + shift + b
 	/opt/firefox/firefox
+
+# Emacs
+super + e 
+  emacs 
