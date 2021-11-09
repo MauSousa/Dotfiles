@@ -113,7 +113,7 @@ font:
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
     #family: Source Code Pro
-    #family: MesloLGS NF
+    # family: MesloLGS NF
     #family: Fira Code
     #family: Hack NF
     family: JetBrains Mono Nerd Font
