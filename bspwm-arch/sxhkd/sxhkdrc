@@ -7,12 +7,12 @@ super + Return
 	alacritty
 
 # program launcher
-super + shift + d
-	rofi -show run -theme Monokai
+# super + shift + d
+# 	rofi -show run -theme Monokai
 
 # program launcher (Apps)
 super + d
-	rofi -show drun -show-icons 
+	rofi -show drun -show-icons
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -142,9 +142,9 @@ XF86MonBrightnessUp
 super + x
 	betterlockscreen -l
 
-# Firefox
+# qutebrowser
 ctrl + shift + f
-	firefox
+	qutebrowser
 
 # Discord
 ctrl + shift + d
@@ -155,5 +155,5 @@ ctrl + shift + b
 	/opt/firefox/firefox
 
 # Emacs
-super + e 
-  emacs 
+# super + e 
+#   emacs 

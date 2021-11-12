@@ -45,3 +45,6 @@ export PATH="$HOME/.emacs.d/bin:$PATH"
 
 # Lunar vim
 #export PATH="$HOME/.local/bin:$PATH"
+
+# Python
+export PATH=/Library/Frameworks/Python.framework/Versions/3.9/bin:$PATH
