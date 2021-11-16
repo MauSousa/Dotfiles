@@ -8,8 +8,8 @@ feh --bg-fill /usr/share/backgrounds/bspwm/wall.png -bg-fill ~/Pictures/wallpape
 picom .config/picom/picom.conf &
 # /usr/bin/emacs --daemon &
 
-bspc monitor HDMI-1 -d 3 4 5 6 7 8 9 
-bspc monitor eDP-1  -d 1 2 
+bspc monitor eDP-1  -d 1 2 3 4 5
+bspc monitor HDMI-1 -d 6 7 8 9 10
 
 bspc config border_width         3
 bspc config window_gap           10

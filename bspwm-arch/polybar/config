@@ -127,7 +127,7 @@ font-4 = NotoColorEmoji:fontformat=truetype:scale=7:antialias=false;
 modules-left = bspwm i3 xwindow 
 ;modules-center = mpd
 ;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
-modules-right = alsa kernel_info packages ram_status cpu eth date powermenu
+modules-right = alsa kernel_info ram_status cpu eth date powermenu
 ;modules-right = alsa ram_status ram_total cpu temperature eth date powermenu
 
 tray-position = right
@@ -391,7 +391,7 @@ format-disconnected =
 type = internal/date
 interval = 1
 
-date = "%d-%m-%Y"
+date = "%A %d-%m-%Y"
 ;date-alt = "%d-%m-%Y"
 
 time = %H:%M:%S
@@ -563,25 +563,13 @@ type = custom/script
 interval = 2
 label-active-font = 5
 ;format-prefix = "🧠 "
-format-prefix = "🐧 "
+format-prefix = " "
 ; format-prefix = " "
 ;format-prefix = " "
 format-underline = #9e5913
 format-prefix-foreground = ${colors.white}
 ;background = ${colors.white}
 exec = ~/.config/bin/kernel_info.sh
-
-[module/packages]
-type = custom/script
-interval = 2
-label-active-font = 5
-;format-prefix = "🧠 "
-format-prefix = "📦 "
-;format-prefix = " "
-format-underline = #5e2345
-format-prefix-foreground = ${colors.white}
-;background = ${colors.white}
-exec = ~/.config/bin/packages.sh
 
 [settings]
 screenchange-reload = true
