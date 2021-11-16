@@ -1,4 +1,7 @@
-neofetch
+# pfetch
+export PF_INFO="ascii title os kernel shell wm" 
+
+pfetch
 
 # Term
 export TERM="xterm-256color"
