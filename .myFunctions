@@ -112,13 +112,19 @@ function gb() {
 
 # Function to copy bspwm config, polybar, sxhkdrc
 function cbc {
-	cp -r ~/.config/bspwm ~/.config/sxhkd	~/.config/polybar ~/.config/bin ~/Pictures /home/augusto/Documents/dotfiles/bspwm-arch
+	cp  ~/.config/bspwm/bspwmrc ~/Documents/dotfiles/bspwm; cp ~/.config/sxhkd/sxhkdrc ~/Documents/dotfiles/sxhkd;	cp ~/.config/polybar/config ~/.config/polybar/launch.sh ~/Documents/dotfiles/polybar; cp ~/.config/bin/ram_status.sh ~/.config/bin/kernel_info.sh ~/Documents/dotfiles/bspwm;
+  # cp -r ~/.config/bspwm ~/.config/sxhkd	~/.config/polybar ~/.config/bin ~/Pictures /home/augusto/Documents/dotfiles/bspwm-arch
+}
+
+# Function to copy wallpapers
+function cpwall() {
+  cp -r ~/Pictures ~/Documents/dotfiles/Pictures
 }
 
 # Function to copy the content of a go file and write it in another file
 function cps() {
 	cat $1 > $2
-	vi $2
+	nvim $2
 }
 
 # Function to init go module
