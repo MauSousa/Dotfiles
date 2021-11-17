@@ -27,7 +27,8 @@ truncation_length = 8
 truncate_to_repo = false
 style = "bold 117"
 read_only = " "
-home_symbol = " "
+home_symbol = "~"
+#home_symbol = " "
 #home_symbol = "ξ"
 #home_symbol = " "
 
