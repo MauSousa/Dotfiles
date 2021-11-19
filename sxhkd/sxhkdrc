@@ -152,8 +152,12 @@ ctrl + shift + d
 
 # Firefox Dev Edition
 ctrl + shift + b
-	/opt/firefox/firefox
+	firefox-developer-edition
 
-# Emacs
-# super + e 
-#   emacs 
+# Thunar
+ctrl + alt + t
+  thunar
+
+# Nitrogen
+super + ctrl + n
+  nitrogen

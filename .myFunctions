@@ -118,7 +118,7 @@ function cbc {
 
 # Function to copy wallpapers
 function cpwall() {
-  cp -r ~/Pictures ~/Documents/dotfiles/Pictures
+  cp -r ~/Pictures ~/Documents/dotfiles
 }
 
 # Function to copy the content of a go file and write it in another file
