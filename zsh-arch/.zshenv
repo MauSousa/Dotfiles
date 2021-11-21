@@ -1,6 +1,5 @@
 # pfetch
-export EDITOR="neovim"
-export PF_INFO="ascii title os kernel shell wm memory editor" 
+export PF_INFO="ascii title os kernel shell wm memory" 
 
 pfetch
 
