@@ -33,8 +33,11 @@ primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
 white = #fff
-bar-background = #4a4846
+bar-background = #2f4f4f
+; bar-background = #4a4846
 empty = #808080
+blue-foreground = #a2a2d0
+blue-underline = #8ab9f1
 
 [bar/example]
 monitor = ${env:MONITOR:eDP-1} 
@@ -139,7 +142,7 @@ font-5 = FontAwesome:fontformat=truetype:scale=7:antialias=false;
 modules-left = bspwm xwindow 
 ;modules-center = mpd
 ;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
-modules-right = alsa kernel_info ram_status cpu eth date powermenu
+modules-right = alsa kernel_info i3_temp ram_status cpu eth date powermenu
 ;modules-right = alsa ram_status ram_total cpu temperature eth date powermenu
 
 tray-position = right
@@ -200,16 +203,16 @@ type = internal/bspwm
 
 ; format = <label-state> <label-mode>
 
-ws-icon-0 = 1;Bin
-ws-icon-1 = 2;Etc
-ws-icon-2 = 3;Lib
-ws-icon-3 = 4;Lib64
-ws-icon-4 = 5;Version
-ws-icon-5 = 6;Dev
-ws-icon-6 = 7;Home
-ws-icon-7 = 8;Sys
-ws-icon-8 = 9;Opt
-ws-icon-9 = 10;Var
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
+ws-icon-9 = 10;
 ws-icon-default = 
 
 label-focused = %icon%
@@ -220,6 +223,8 @@ label-focused-padding = 3
 
 label-occupied = %icon%
 label-occupied-padding = 3
+label-occupied-foreground = ${colors.blue-foreground}
+; label-occupied-underline = ${colors.blue-underline}
 ; label-occupied-underline= ${colors.alert}
 
 label-urgent = %index%!
@@ -550,10 +555,10 @@ expand-right = true
 
 format-spacing = 1
 
-label-open = 
+label-open = 
 ;label-open = 
 label-open-foreground = ${colors.primary}
-label-close =  cancel
+label-close =  cancel
 label-close-foreground = ${colors.alert}
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
@@ -597,6 +602,14 @@ format-underline = #9e5913
 format-prefix-foreground = ${colors.white}
 ;background = ${colors.white}
 exec = ~/.config/bin/kernel_info.sh
+
+[module/i3_temp]
+type = custom/script
+interval = 2
+format-prefix = 🔅
+format-prefix-foreground = {colors.white}
+format-underline = #abcdef
+exec = ~/.config/bin/i3_weather.sh
 
 [settings]
 screenchange-reload = true
