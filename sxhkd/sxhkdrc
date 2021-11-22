@@ -4,7 +4,11 @@
 
 # terminal emulator
 super + Return
-	alacritty
+	kitty
+
+# second terminal emulator
+super + alt + Return
+  alacritty
 
 # program launcher
 # super + shift + d
@@ -161,3 +165,5 @@ ctrl + alt + t
 # Nitrogen
 super + ctrl + n
   nitrogen
+
+
