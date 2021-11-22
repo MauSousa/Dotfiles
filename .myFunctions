@@ -100,6 +100,17 @@ function cdf() {
  cp ~/.zshrc ~/.zshenv /home/$USER/Documents/dotfiles/zsh-arch; cp ~/.config/alacritty/alacritty.yml /home/$USER/Documents/dotfiles/alacritty-arch; cp ~/.mongoshrc.js /home/$USER/Documents/dotfiles/mongo-arch; cp ~/.config/lsd/config.yaml /home/$USER/Documents/dotfiles/lsd-arch; cp ~/.config/nvim/init.vim /home/$USER/Documents/dotfiles/nvim-arch; cp ~/.starship/config.toml /home/$USER/Documents/dotfiles/starship-arch; cp ~/.config/kitty/diff.conf ~/.config/kitty/kitty.conf ~/.config/kitty/dracula.conf /home/$USER/Documents/dotfiles/kitty
 }
 
+# Function to copy bspwm config, polybar, sxhkdrc
+function cbc {
+	cp  ~/.config/bspwm/bspwmrc ~/Documents/dotfiles/bspwm; cp ~/.config/sxhkd/sxhkdrc ~/Documents/dotfiles/sxhkd;	cp ~/.config/polybar/config ~/.config/polybar/launch.sh ~/Documents/dotfiles/polybar; cp ~/.config/bin/ram_status.sh ~/.config/bin/kernel_info.sh ~/.config/bin/i3_weather.sh ~/Documents/dotfiles/bspwm;
+  # cp -r ~/.config/bspwm ~/.config/sxhkd	~/.config/polybar ~/.config/bin ~/Pictures /home/augusto/Documents/dotfiles/bspwm-arch
+}
+
+# Function to copy wallpapers
+function cpwall() {
+  cp -r ~/Pictures ~/Documents/dotfiles
+}
+
 # Function to run go programs
 function gr() {
 	go run $1
@@ -108,17 +119,6 @@ function gr() {
 # Function to build executable go programs
 function gb() {
 	go build $1
-}
-
-# Function to copy bspwm config, polybar, sxhkdrc
-function cbc {
-	cp  ~/.config/bspwm/bspwmrc ~/Documents/dotfiles/bspwm; cp ~/.config/sxhkd/sxhkdrc ~/Documents/dotfiles/sxhkd;	cp ~/.config/polybar/config ~/.config/polybar/launch.sh ~/Documents/dotfiles/polybar; cp ~/.config/bin/ram_status.sh ~/.config/bin/kernel_info.sh ~/Documents/dotfiles/bspwm;
-  # cp -r ~/.config/bspwm ~/.config/sxhkd	~/.config/polybar ~/.config/bin ~/Pictures /home/augusto/Documents/dotfiles/bspwm-arch
-}
-
-# Function to copy wallpapers
-function cpwall() {
-  cp -r ~/Pictures ~/Documents/dotfiles
 }
 
 # Function to copy the content of a go file and write it in another file
