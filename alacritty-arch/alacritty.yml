@@ -116,7 +116,8 @@ font:
     # family: MesloLGS NF
     #family: Fira Code
     #family: Hack NF
-    family: JetBrains Mono Nerd Font
+    # family: JetBrains Mono Nerd Font
+    family: JetBrains Mono
     #family: FiraCode Nerd Font
     #family: Iosevka Nerd Font
     #family: Hurmit Nerd Font Mono
