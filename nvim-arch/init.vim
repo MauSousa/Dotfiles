@@ -11,7 +11,11 @@ Plug 'hail2u/vim-css3-syntax'
 Plug 'gko/vim-coloresque'
 Plug 'tpope/vim-haml'
 Plug 'mattn/emmet-vim'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
 call plug#end()
+
+set noshowmode
 
 " Encoding
 set encoding=utf-8
@@ -134,3 +138,44 @@ function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
+
+let g:lightline = {
+      \ 'component_function': {
+      \   'filetype': 'MyFiletype',
+      \   'fileformat': 'MyFileformat',
+      \ }
+      \ }
+
+function! MyFiletype()
+  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
+endfunction
+
+function! MyFileformat()
+  return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
+endfunction
+
+" let g:airline_powerline_fonts = 1
+
+" if !exists('g:airline_symbols')
+"   let g:airline_symbols = {}
+" endif
+
+" " Airline
+" let g:airline_theme = 'minimalist'
+" let g:airline#extensions#branch#enabled = 1
+" let g:airline#extensions#ale#enabled = 1
+" let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tagbar#enabled = 1
+" let g:airline_skip_empty_sections = 1
+" let g:webdevicons_enable_airline_statusline = 1
+" let g:webdevicons_enable_airline_tabline = 1
+
+" " powerline symbols
+" let g:airline_left_sep = ''
+" let g:airline_left_alt_sep = ''
+" let g:airline_right_sep = ''
+" let g:airline_right_alt_sep = ''
+" let g:airline_symbols.branch = ''
+" let g:airline_symbols.readonly = ''
+" let g:airline_symbols.linenr = '☰'
+" let g:airline_symbols.maxlinenr = ''
