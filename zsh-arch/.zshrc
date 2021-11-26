@@ -44,3 +44,4 @@ source ~/./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Starship
 eval "$(starship init zsh)"
+
