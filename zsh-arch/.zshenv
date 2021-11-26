@@ -20,6 +20,12 @@ setopt EXTENDED_HISTORY
 setopt HIST_FIND_NO_DUPS
 setopt INC_APPEND_HISTORY
 
+# Alias
+source ~/Documents/dotfiles/.myAlias
+
+# Functions
+source ~/Documents/dotfiles/.myFunctions
+
 # Nvm
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}"  ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh"  ] && \. "$NVM_DIR/nvm.sh" # This loads nvm

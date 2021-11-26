@@ -17,14 +17,6 @@ bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 
-# Alias
-export Alias="/home/augusto/Documents/dotfiles"
-source $Alias/.myAlias
-
-# Functions
-export Functions="/home/augusto/Documents/dotfiles"
-source $Functions/.myFunctions
-
 # Percentage symbol
 setopt PROMPT_CR
 setopt PROMPT_SP
