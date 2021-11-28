@@ -9,6 +9,7 @@ source ~/.config/nvim/plugins/commentary.vim
 source ~/.config/nvim/plugins/gitgutter.vim
 source ~/.config/nvim/plugins/colors.vim
 source ~/.config/nvim/plugins/html-syntax.vim
+source ~/.config/nvim/plugins/php.vim
 call plug#end()
 
 " Typo fixes
