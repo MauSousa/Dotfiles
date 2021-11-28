@@ -1,36 +1,34 @@
 # Fuction to compile and execute cpp programs
-function compile-cpp(){
-    local obj="${1}.cpp"
-    local name="${2}"
-    g++ "$obj" -o "$name"
-    ./"$name"
-}
+# function compile-cpp(){
+#     local obj="${1}.cpp"
+#     local name="${2}"
+#     g++ "$obj" -o "$name"
+#     ./"$name"
+# }
 
 # Function to compile and execute c programs
-function compilar-c(){
-    local file="${1}.c"
-    local name="${2}"
-    g++ "$file" -o "$name"
-    ./"$name"
-}
+# function compilar-c(){
+#     local file="${1}.c"
+#     local name="${2}"
+#     g++ "$file" -o "$name"
+#     ./"$name"
+# }
 
 # Function to compile java programs
-function compilar-java(){
-		javac "$1"
-}
+# function compilar-java(){
+# 		javac "$1"
+# }
 
 # Function to create and enter a directory
 function crear-entrar(){
-    local directorio="${1}"
-    mkdir "$directorio"
-    cd "$directorio"
+    mkdir -p "$1" || return
+    cd "$1" || return
 }
 
 # Function to add and commit in git
 function gaddm(){
 	git add .
-	local comentatrio="${1}"
-	git commit -m "$comentatrio"
+	git commit -m "$1"
 }
 
 # Function to add and commit README
@@ -51,17 +49,17 @@ function gaddf(){
 
 # Function to create a branch and move
 function gchk() {
-	git checkout -b $1
+	git checkout -b "$1"
 } 
 
 # Function to delete branch
 function gdel() {
-	git branch -d $1
+	git branch -d "$1"
 }
 
 # Function to merge branches
 function gmrg() {
-	git merge $1
+	git merge "$1"
 }
 
 # Function for MySQL
@@ -74,7 +72,6 @@ function entrarSql() {
 function gthb() {
 	local url="${1}"
 	git remote add origin "$url"
-	git branch -M main
 	git push -u origin main
 }
 
@@ -91,8 +88,8 @@ function trz() {
 
 # Function to delete files
 function rmk() {
-	scrub -p dod $1
-	shred -zun 10 -v $1
+	scrub -p dod "$1" || return
+	shred -zun 10 -v "$1" || return 
 }
 
 # Function to copy and push dotfiles to repository
@@ -113,50 +110,47 @@ function cpwall() {
 
 # Function to run go programs
 function gr() {
-	go run $1
+	go run "$1" || return
 }
 
 # Function to build executable go programs
 function gb() {
-	go build $1
+	go build "$1" || return
 }
 
 # Function to copy the content of a go file and write it in another file
 function cps() {
-	cat $1 > $2
-	nvim $2
+	cat "$1" > "$2" || return
+	nvim "$2" || return
 }
 
 # Function to init go module
 function gmod() {
-	go mod init $1
+	go mod init "$1" || return
 }
 
 # Function to create and activate python virtual env 
 function pyenv() {
-	python3 -m venv $1
-	source $1/bin/activate
+	python3 -m venv "$1"
+	source "$1"/bin/activate
 }
 
 # Function to kill Discord process
 function kd() {
-	killall Discord 2>/dev/null
-	killall Discord 2>/dev/null
-	killall Discord 2>/dev/null
-	killall Discord 2>/dev/null
+	killall Discord && killall Discord || return
 }
 
 # Function to run TS files with Deno
 function dr() {
-	deno run $1
+	deno run "$1" || return
 }
 
 # Function to bundle TS file
 function dnb() {
-	deno bundle $1 $2
+	deno bundle "$1" "$2" || return
 }
 
 # Function to remove directories
 function rd() {
-  rm -rf $1
+  rm -rf "$1" || return
 }
