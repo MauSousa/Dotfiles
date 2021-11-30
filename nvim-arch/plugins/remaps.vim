@@ -6,3 +6,4 @@ inoremap ,ñ <ESC>:W<enter>
 inoremap ,l <C-d><leader>
 nnoremap ñp <ESC>:tabnext<enter>
 nnoremap ññ <ESC>:tabnew<enter>
+nnoremap ñl <ESC>:tabclose<enter>
