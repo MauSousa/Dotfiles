@@ -38,7 +38,7 @@ bar-background = #2f4f4f
 empty = #808080
 blue-foreground = #a2a2d0
 blue-underline = #8ab9f1
-icon-background = #404040
+icon-background = #ffff00
 
 [bar/example]
 monitor = ${env:MONITOR:eDP-1} 
@@ -225,7 +225,7 @@ label-focused-padding = 3
 label-occupied = %icon%
 label-occupied-padding = 3
 label-occupied-foreground = ${colors.blue-foreground}
-label-occupied-background = ${colors.icon-background}
+label-occupied-underline = ${colors.icon-background}
 ; label-occupied-underline = ${colors.blue-underline}
 ; label-occupied-underline= ${colors.alert}
 
