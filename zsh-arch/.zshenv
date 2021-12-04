@@ -21,10 +21,10 @@ setopt HISTIGNOREALLDUPS
 setopt INC_APPEND_HISTORY
 
 # Alias
-source ~/Documents/dotfiles/.myAlias
+source ~/Documents/dotfiles/alias.txt
 
 # Functions
-source ~/Documents/dotfiles/.myFunctions
+source ~/Documents/dotfiles/functions.txt
 
 # Nvm
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}"  ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
