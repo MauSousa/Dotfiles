@@ -173,3 +173,7 @@ super + alt + o
 # Spotify
 ctrl + alt + s
   spotify
+
+# Zathura
+ctrl + alt + p
+  zathura
