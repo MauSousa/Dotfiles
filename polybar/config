@@ -107,6 +107,7 @@ cursor-scroll = ns-resize
 
 [bar/main]
 monitor = ${env:MONITOR:HDMI-1} 
+monitor-fallback = ${env:MONITOR:eDP-1} 
 width = 100%
 height = 25
 ;offset-x = 1%
