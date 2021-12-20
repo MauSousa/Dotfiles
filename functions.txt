@@ -88,8 +88,8 @@ function trz() {
 
 # Function to delete files
 function rmk() {
-	scrub -p dod "$1" || return
-	shred -zun 10 -v "$1" || return 
+	scrub -p dod "$1" || exit 0
+	shred -zun 10 -v "$1" || exit 0 
 }
 
 # Function to copy and push dotfiles to repository
