@@ -1,7 +1,11 @@
 # pfetch
-export PF_INFO="ascii title os kernel shell wm memory" 
+# export PF_INFO="ascii title os kernel shell wm uptime memory" 
+# export PF_SEP=""
 
-pfetch
+# pfetch
+
+# fetch master 6000
+./fm6000 -f arch.txt
 
 # Term
 export TERM="xterm-256color"
