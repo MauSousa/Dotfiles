@@ -144,7 +144,7 @@ XF86MonBrightnessUp
 
 # lock screen
 super + x
-	betterlockscreen -l
+	betterlockscreen -l 
 
 # qutebrowser
 ctrl + shift + f

@@ -5,4 +5,4 @@ inoremap ñl <ESC>:w<enter>i
 inoremap ,ñ <ESC>:W<enter>
 nnoremap ñp <ESC>:tabnext<enter>
 nnoremap ñ. <ESC>:tabnew<enter>
-nnoremap ll <ESC>:tabclose<enter>
+nnoremap ,l <ESC>:tabclose<enter>
