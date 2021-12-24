@@ -5,7 +5,7 @@
 # pfetch
 
 # fetch master 6000
-./fm6000 -f arch.txt
+~/./fm6000 -f ~/arch.txt
 
 # Term
 export TERM="xterm-256color"
