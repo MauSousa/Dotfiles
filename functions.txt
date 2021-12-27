@@ -108,6 +108,11 @@ function cpwall() {
   cp -r ~/Pictures ~/Documents/dotfiles
 }
 
+# Fuction to copy lua nvim config
+function cpluanvim() {
+  cp -r ~/.config/nvim ~/Documents/dotfiles/lua-nvim
+}
+
 # Function to run go programs
 function gr() {
 	go run "$1" || return
