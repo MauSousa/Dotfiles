@@ -110,7 +110,7 @@ function cpwall() {
 
 # Fuction to copy lua nvim config
 function cpluanvim() {
-  cp -r ~/.config/nvim ~/Documents/dotfiles/lua-nvim
+  cp ~/.config/nvim/init.lua ~/Documents/dotfiles/lua-neovim; cp ~/.config/nvim/lua/user/*.lua ~/Documents/dotfiles/lua-neovim/lua/user; cp ~/.config/nvim/lua/user/lsp/*.lua ~/Documents/dotfiles/lua-neovim/lua/user/lsp; cp ~/.config/nvim/lua/user/lsp/settings/*.lua ~/Documents/dotfiles/lua-neovim/lua/user/lsp/settings  
 }
 
 # Function to run go programs

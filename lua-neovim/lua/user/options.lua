@@ -53,6 +53,8 @@ vim.cmd [[
     autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
   augroup END
 ]] -- remembers cursor position
+
+-- Bad writing
 vim.cmd [[cnoreabbrev W! w!]]
 vim.cmd [[cnoreabbrev Q! q!]]
 vim.cmd [[cnoreabbrev Qall! qall!]]
@@ -63,5 +65,28 @@ vim.cmd [[cnoreabbrev WQ wq]]
 vim.cmd [[cnoreabbrev W w]]
 vim.cmd [[cnoreabbrev Q q]]
 vim.cmd [[cnoreabbrev Qall qall]]
+
+-- lightline
+vim.cmd [[
+  let g:lightline = {
+   \ 'colorscheme': 'darcula',
+   \ 'component_function': {
+   \   'filetype': 'MyFiletype',
+   \   'fileformat': 'MyFileformat',
+   \ }
+   \ }
+]]
+
+vim.cmd [[
+   function! MyFiletype()
+     return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
+   endfunction
+]]
+
+vim.cmd [[
+  function! MyFileformat()
+    return winwidth(0) > 70 ? (&fileformat . ' ' .WebDevIconsGetFileFormatSymbol()) : ''
+  endfunction
+]]
 
 
