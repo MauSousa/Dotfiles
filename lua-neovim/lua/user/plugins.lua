@@ -87,6 +87,12 @@ return packer.startup(function(use)
   -- icons for lightline
   use "ryanoasis/vim-devicons"
 
+  -- Markdown preview
+
+  -- Git
+  use "airblade/vim-gitgutter"
+
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
