@@ -94,7 +94,7 @@ function rmk() {
 
 # Function to copy and push dotfiles to repository
 function cdf() {
- cp ~/.zshrc ~/.zshenv /home/$USER/Documents/dotfiles/zsh-arch; cp ~/.config/alacritty/alacritty.yml /home/$USER/Documents/dotfiles/alacritty-arch; cp ~/.mongoshrc.js /home/$USER/Documents/dotfiles/mongo-arch; cp ~/.config/lsd/config.yaml /home/$USER/Documents/dotfiles/lsd-arch; cp ~/.config/nvim/init.vim /home/$USER/Documents/dotfiles/nvim-arch; cp -r ~/.config/nvim/plugins /home/$USER/Documents/dotfiles/nvim-arch; cp ~/.starship/config.toml /home/$USER/Documents/dotfiles/starship-arch; cp ~/.config/kitty/diff.conf ~/.config/kitty/kitty.conf ~/.config/kitty/dracula.conf /home/$USER/Documents/dotfiles/kitty; cp ~/fm6000 ~/Documents/dotfiles
+ cp ~/.zshrc ~/.zshenv /home/$USER/Documents/dotfiles/zsh-arch; cp ~/.config/alacritty/alacritty.yml /home/$USER/Documents/dotfiles/alacritty-arch; cp ~/.mongoshrc.js /home/$USER/Documents/dotfiles/mongo-arch; cp ~/.config/lsd/config.yaml /home/$USER/Documents/dotfiles/lsd-arch; cp ~/.starship/config.toml /home/$USER/Documents/dotfiles/starship-arch; cp ~/.config/kitty/diff.conf ~/.config/kitty/kitty.conf ~/.config/kitty/dracula.conf /home/$USER/Documents/dotfiles/kitty; cp ~/fm6000 ~/Documents/dotfiles
 }
 
 # Function to copy bspwm config, polybar, sxhkdrc
