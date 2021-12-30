@@ -145,7 +145,7 @@ font-5 = FontAwesome:fontformat=truetype:scale=7:antialias=false;
 modules-left = bspwm xwindow 
 ;modules-center = mpd
 ;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
-modules-right = alsa kernel_info i3_temp ram_status cpu eth date powermenu
+modules-right = alsa kernel_info i3_temp ram_status cpu date time powermenu
 ;modules-right = alsa ram_status ram_total cpu temperature eth date powermenu
 
 tray-position = right
@@ -451,7 +451,25 @@ format-prefix = 🗓
 format-prefix-foreground = ${colors.white}
 format-underline = #0a6cf5
 
-label = %date% %time%
+label = %date%
+
+[module/time]
+type = internal/date
+interval = 1
+
+; date = " %A %d-%m-%Y"
+;date-alt = "%d-%m-%Y"
+
+time =  %H:%M:%S 
+;time-alt = %H:%M:%S
+
+; format-prefix = 🗓
+; format-prefix =    
+;format-prefix = 
+format-prefix-foreground = ${colors.white}
+format-underline = #1a6ca4
+
+label = %time% 
 
 [module/pulseaudio]
 type = internal/pulseaudio

@@ -35,6 +35,7 @@ local options = {
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
   ttyfast = true,
   lazyredraw = true,
+  hidden = false,
   -- laststatus = "2",
 }
 
