@@ -92,6 +92,8 @@ return packer.startup(function(use)
   -- Git
   use "airblade/vim-gitgutter"
 
+  -- Auto Close Tag
+  use "alvan/vim-closetag"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

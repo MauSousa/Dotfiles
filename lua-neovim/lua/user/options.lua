@@ -36,6 +36,8 @@ local options = {
   ttyfast = true,
   lazyredraw = true,
   hidden = false,
+  syntax = "on",
+  -- nocompatible = true,
   -- laststatus = "2",
 }
 
@@ -90,4 +92,4 @@ vim.cmd [[
   endfunction
 ]]
 
-
+vim.cmd [[let g:closetag_emptyTags_caseSensitive = 1]]

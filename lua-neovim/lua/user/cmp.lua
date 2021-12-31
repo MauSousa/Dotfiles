@@ -104,6 +104,7 @@ cmp.setup {
         nvim_lsp = "[LSP]",
         nvim_lua = "[NVIM_LUA]",
         luasnip = "[Snippet]",
+        -- emmet  = "[Emmet]"
         buffer = "[Buffer]",
         path = "[Path]",
       })[entry.source.name]
@@ -114,6 +115,7 @@ cmp.setup {
     { name = "nvim_lsp" },
     { name = "nvim_lua" },
     { name = "luasnip" },
+    -- { name = "emmet" },
     { name = "buffer" },
     { name = "path" },
   },
