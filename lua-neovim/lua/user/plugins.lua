@@ -48,10 +48,9 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "tpope/vim-commentary" -- gcc comments
   use "windwp/nvim-autopairs" -- autopairs
-  use "kyazdani42/nvim-web-devicons" -- icons
   use 'marko-cerovac/material.nvim' -- colorscheme
   use 'gko/vim-coloresque' -- for color preview
-  use 'flazz/vim-colorschemes' -- more colorschemes
+  -- use 'flazz/vim-colorschemes' -- more colorschemes
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
@@ -59,6 +58,10 @@ return packer.startup(function(use)
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
+
+  -- colorscheme
+  use "lunarvim/colorschemes"
+  use "lunarvim/darkplus.nvim"
 
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
@@ -94,6 +97,14 @@ return packer.startup(function(use)
 
   -- Auto Close Tag
   use "alvan/vim-closetag"
+
+  -- Nvim Tree
+  use 'kyazdani42/nvim-tree.lua'
+  use "kyazdani42/nvim-web-devicons" -- icons
+
+  -- Buferline
+  use "akinsho/bufferline.nvim"
+  use "moll/vim-bbye"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

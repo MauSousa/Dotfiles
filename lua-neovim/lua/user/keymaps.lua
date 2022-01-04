@@ -39,7 +39,7 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<C-n>", ":tabnew<cr>", opts)
 
 -- Open sidebar like nerdtree
-keymap("n", "<leader>e", ":Lex 50<cr>", opts)
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 -- Move text up and down A -> alt key
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
