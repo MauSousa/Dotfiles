@@ -1,4 +1,4 @@
-# Directorie related
+# Directory related
 alias l="lsd --group-dirs=first"
 alias ll="lsd -h --group-dirs=first"
 alias la="lla"
@@ -7,22 +7,12 @@ alias ls="lsd -lAh --group-dirs=first"
 alias la="lsd -a --group-dirs=first"
 
 # System related
-# alias cl="clear"
-# alias cñ="cl"
-# alias ck="cl"
 alias sudo="doas"
 alias ..="cd .."
 alias actualizar="sudo pacman -Syu"
+alias update="paru -Syu"
 alias apagar="shutdown -P now"
 alias reiniciar="shutdown -r now"
-
-# Doom Emacs
-alias em="/usr/bin/emacs -nw"
-alias emacs="emacsclient -c -a 'emacs'"
-alias doomsync="~/.emacs.d/bin/doom sync"
-alias doomdoctor="~/.emacs.d/bin/doom doctor"
-alias doomupgrade="~/.emacs.d/bin/doom upgrade"
-alias doompurge="~/.emacs.d/bin/doom purge"
 
 #  Git
 alias pull="git pull"
@@ -30,8 +20,9 @@ alias push="git push"
 alias commit="git commit"
 alias add="git add"
 alias ginit="git init"
-alias gbr="git branch"
-alias gts="git s"
+alias gitbr="git branch"
+alias gits="git s"
+alias gitch="git checkout"
 
 # Npm
 alias start="npm start"
@@ -49,18 +40,8 @@ alias flamegui="flameshot gui"
 alias gt="gr"
 alias gti="go mod tidy"
 
-# Python
-alias py="python3"
-#alias py3="python3.10"
-alias pipf="pip freeze"
-alias pipl="pip list"
-
 # Vite
 alias nrd="npm run dev"
 alias nrb="npm run build"
 alias vinit="npm init vite@latest"
 
-# Symfony
-alias sfs="symfony serve"
-alias sfsd="symfony serve -d"
-alias sfst="symfony serve:stop"
