@@ -16,7 +16,7 @@ super + alt + Return
 
 # program launcher (Apps)
 super + d
-	rofi -show drun -show-icons "JetBrains Mono"
+	rofi -show drun -show-icons JetBrains Mono
 
 # make sxhkd reload its configuration files:
 super + Escape
