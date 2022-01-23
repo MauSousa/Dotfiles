@@ -4,9 +4,10 @@
 sxhkd &
 nm-applet &
 $HOME/.config/polybar/launch.sh
-feh --bg-fill ~/Pictures/wallpapers-master/0305.jpg -bg-fill ~/Pictures/wallpapers-master/0143.jpg
+feh --bg-fill ~/Pictures/wallpapers-master/0305.jpg -bg-fill ~/Pictures/wallpapers-master/0112.jpg
 # feh --bg-fill /usr/share/backgrounds/bspwm/wall.png -bg-fill ~/Pictures/wallpapers-master/0012.jpg
-picom .config/picom/picom.conf &
+# picom &
+# picom --experimental-backends &
 # /usr/bin/emacs --daemon &
 
 bspc monitor eDP-1  -d 1 2 3 4 5
@@ -37,4 +38,3 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a zathura state=tiled
 
-picom --experimental-backends &
