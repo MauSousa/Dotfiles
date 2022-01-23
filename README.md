@@ -1,3 +1,7 @@
-# Arch Dotfiles
+# Dotfiles
 
-## Here goes arch dotfiles
+## I use Arch btw
+
+## [LICENSE](LICENSE)
+
+
