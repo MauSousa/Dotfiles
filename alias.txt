@@ -10,7 +10,7 @@ alias la="lsd -a --group-dirs=first"
 alias sudo="doas"
 alias ..="cd .."
 alias actualizar="sudo pacman -Syu"
-alias update="paru -Syu"
+alias update="paru -Sua"
 alias apagar="shutdown -P now"
 alias reiniciar="shutdown -r now"
 
@@ -22,7 +22,7 @@ alias add="git add"
 alias ginit="git init"
 alias gitbr="git branch"
 alias gits="git s"
-alias gitch="git checkout"
+alias gitchk="git checkout"
 
 # Npm
 alias start="npm start"
