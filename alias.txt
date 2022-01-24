@@ -11,18 +11,17 @@ alias sudo="doas"
 alias ..="cd .."
 alias actualizar="sudo pacman -Syu"
 alias update="paru -Sua"
-alias apagar="shutdown -P now"
-alias reiniciar="shutdown -r now"
 
 #  Git
 alias pull="git pull"
-alias push="git push"
+alias push="git push origin main"
 alias commit="git commit"
 alias add="git add"
 alias ginit="git init"
 alias gitbr="git branch"
 alias gits="git s"
 alias gitchk="git checkout"
+alias gitsw="git switch"
 
 # Npm
 alias start="npm start"
