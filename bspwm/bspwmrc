@@ -4,7 +4,7 @@
 sxhkd &
 nm-applet &
 $HOME/.config/polybar/launch.sh
-feh --bg-fill ~/Pictures/wallpapers-master/0305.jpg -bg-fill ~/Pictures/wallpapers-master/0112.jpg
+feh --bg-fill ~/Pictures/wallpapers-master/0305.jpg -bg-fill ~/Pictures/wallpapers-master/0240.jpg
 # feh --bg-fill /usr/share/backgrounds/bspwm/wall.png -bg-fill ~/Pictures/wallpapers-master/0012.jpg
 # picom &
 # picom --experimental-backends &

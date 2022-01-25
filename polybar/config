@@ -108,7 +108,7 @@ cursor-scroll = ns-resize
 
 [bar/main]
 monitor = ${env:MONITOR:HDMI-1} 
-monitor-fallback = ${env:MONITOR:eDP-1} 
+; monitor-fallback = ${env:MONITOR:eDP-1} 
 width = 100%
 height = 25
 ;offset-x = 1%
@@ -474,7 +474,7 @@ label = %time%
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume = VOL %percentage%%
+label-volume = 🔊 %percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted = 🔇 muted
