@@ -10,10 +10,9 @@ super + Return
 super + alt + Return
   alacritty
 
-# program launcher
-# super + shift + d
-# 	rofi -show run -theme Monokai
-
+program launcher
+super + shift + d
+  dmenu_run
 # program launcher (Apps)
 super + d
 	rofi -show drun -show-icons JetBrains Mono
@@ -130,11 +129,11 @@ super + {Left,Down,Up,Right}
 
 # volume control
 XF86AudioLowerVolume
-	amixer set Master 5%-
+  pulsemixer --change-volume -5
 XF86AudioRaiseVolume
-	amixer set Master 5%+
+	pulsemixer --change-volume +5
 XF86AudioMute
-	amixer set Master toggle
+  pulsemixer --toggle-mute
 
 # brightness control
 XF86MonBrightnessDown
@@ -182,3 +181,6 @@ ctrl + alt + p
 ctrl + alt + b
   bitwarden-desktop
 
+# Chromium
+ctrl + alt + c
+  chromium
