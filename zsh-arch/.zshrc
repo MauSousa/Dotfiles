@@ -32,6 +32,9 @@ export NVM_DIR="$HOME/.nvm"
 
 cdpath=($HOME/Dev $HOME/Documents)
 
+GPG_TTY=$(tty)
+export GPG_TTY
+
 # ZSH Plugins
 source ~/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
