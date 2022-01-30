@@ -30,13 +30,14 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+cdpath=($HOME/Dev $HOME/Documents)
+
 # ZSH Plugins
 source ~/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Starship
 eval "$(starship init zsh)"
-
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
