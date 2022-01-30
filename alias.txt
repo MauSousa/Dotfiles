@@ -11,6 +11,8 @@ alias sudo="doas"
 alias ..="cd .."
 alias actualizar="sudo pacman -Syu"
 alias update="paru -Sua"
+alias install="sudo pacman -S"
+alias uninstall="sudo pacman -Rs"
 
 #  Git
 alias pull="git pull"
