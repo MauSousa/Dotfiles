@@ -145,7 +145,8 @@ font-5 = FontAwesome:fontformat=truetype:scale=7:antialias=false;
 modules-left = bspwm xwindow 
 ;modules-center = mpd
 ;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
-modules-right = alsa kernel_info i3_temp ram_status cpu date time powermenu
+; modules-right = pulseaudio kernel_info ram_status cpu date time powermenu
+modules-right = pulseaudio kernel_info i3_temp ram_status cpu date time powermenu
 ;modules-right = alsa ram_status ram_total cpu temperature eth date powermenu
 
 tray-position = right
@@ -596,15 +597,15 @@ label-close-foreground = ${colors.alert}
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
 
-menu-0-0 = reboot
+menu-0-0 = quit
 menu-0-0-exec = menu-open-1
 menu-0-1 = power off
 menu-0-1-exec = menu-open-2
 
 menu-1-0 = cancel
 menu-1-0-exec = menu-open-0
-menu-1-1 = reboot
-menu-1-1-exec = reboot
+menu-1-1 = quit
+menu-1-1-exec = kill -9 -1
 
 menu-2-0 = power off
 menu-2-0-exec = poweroff
