@@ -1,33 +1,18 @@
 # Function to create and enter a directory
 function crear-entrar(){
-    mkdir -p "$1" || return
-    cd "$1" || return
-}
-
-# Function to add and commit in git
-function gaddm(){
-	git add .
-	git commit -m "$1"
-}
-
-# Function to add a file to git
-function gaddf(){
-	local archive="${1}"
-	local commentary="${2}"
-	git add "$archive"
-	git commit -m "${commentary}"
+    mkdir -p $1 
+    cd $1
 }
 
 # Function for MySQL
 function entrarSql() {
-	local user="${1}"
-	mysql -u "$user" -p
+	mysql -u $1 -p
 }
 
 # Function to delete files
 function rmk() {
-	scrub -p dod "$1"
-	shred -zun 10 -v "$1"
+	scrub -p dod $1
+	shred -zun 10 -v $1
 }
 
 # Function to copy and push dotfiles to repository
@@ -53,8 +38,8 @@ function cpluanvim() {
 
 # Function to create and activate python virtual env 
 function pyenv() {
-	python3 -m venv "$1"
-	source "$1"/bin/activate
+	python3 -m venv $1
+	source $1/bin/activate
 }
 
 # Function to kill Discord process
@@ -64,15 +49,15 @@ function kd() {
 
 # Function to run TS files with Deno
 function dr() {
-	deno run "$1" || return
+	deno run $1
 }
 
 # Function to bundle TS file
 function dnb() {
-	deno bundle "$1" "$2" || return
+	deno bundle $1 $2
 }
 
 # Function to remove directories
 function rd() {
-  rm -rf "$1" || return
+  rm -rf $1
 }
