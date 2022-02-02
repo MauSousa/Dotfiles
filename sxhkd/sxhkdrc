@@ -4,15 +4,20 @@
 
 # terminal emulator
 super + Return
-	kitty
+	st
 
 # second terminal emulator
+super + shift + Return
+  kitty
+
+# third terminal emulator
 super + alt + Return
   alacritty
 
-program launcher
+# program launcher
 super + shift + d
   dmenu_run
+
 # program launcher (Apps)
 super + d
 	rofi -show drun -show-icons JetBrains Mono
