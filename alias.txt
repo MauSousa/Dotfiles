@@ -8,12 +8,15 @@ alias la="lsd -a --group-dirs=first"
 alias exat="exa -aT --color=always --group-directories-first"
 
 # System related
-alias sudo="doas"
 alias ..="cd .."
 alias actualizar="sudo pacman -Syu"
 alias update="paru -Sua"
 alias install="sudo pacman -S"
+alias pinstall="paru -S"
 alias uninstall="sudo pacman -Rs"
+alias puninstall="paru -Rs"
+alias search="pacman -Ss"
+alias psearch="paru -Ss"
 
 #  Git
 alias pull="git pull"
