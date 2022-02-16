@@ -1,4 +1,6 @@
 # Personal Config
+# fetch master 6000
+~/./fm6000 -f ~/arch.txt
 
 # Enable colors and change prompt:
 autoload -U colors && colors

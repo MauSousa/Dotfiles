@@ -17,6 +17,10 @@ alias uninstall="sudo pacman -Rs"
 alias puninstall="paru -Rs"
 alias search="pacman -Ss"
 alias psearch="paru -Ss"
+alias souenv="source env/bin/activate"
+alias zshenv="source ~/.zshenv"
+alias zshrc="source ~/.zshrc"
+alias plugins="nvim ~/.config/nvim/lua/user/plugins.lua"
 
 #  Git
 alias pull="git pull"

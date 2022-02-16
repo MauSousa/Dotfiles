@@ -1,18 +1,6 @@
-# pfetch
-# export PF_INFO="ascii title os kernel shell wm uptime memory" 
-# export PF_SEP=""
-
-# pfetch
-
-# fetch master 6000
-~/./fm6000 -f ~/arch.txt
 
 # Term
-export TERM="xterm-256color"
-
-# Doom Emacs
-# export VISUAL="emacsclient -c -a emacs"
-# export EDITOR="emacsclient -t -a ''"
+export TERM="st-256color"
 
 # History
 export HISTFILE=~/.zsh_history
@@ -46,13 +34,4 @@ export PATH="$PATH:/home/augusto/.config/composer/vendor/bin"
 
 # Symfony
 export PATH="$HOME/.symfony/bin:$PATH"
-
-# Browser
-export BROWSER=/opt/firefox/firefox
-
-# Doom Emacs
-export PATH="$HOME/.emacs.d/bin:$PATH"
-
-# Python
-export PATH=/Library/Frameworks/Python.framework/Versions/3.9/bin:$PATH
 

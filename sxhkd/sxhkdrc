@@ -163,7 +163,7 @@ ctrl + shift + b
 	firefox-developer-edition
 
 # Thunar
-ctrl + alt + t
+ctrl + alt + Return
   thunar
 
 # Nitrogen
@@ -189,3 +189,4 @@ ctrl + alt + b
 # Chromium
 ctrl + alt + c
   chromium
+

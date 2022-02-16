@@ -24,31 +24,31 @@ env:
   TERM: xterm-256color
 
 window:
-  opacity: 0.50
+  # opacity: 0.50
   # Window dimensions (changes require restart)
   #
   # Number of lines/columns (not pixels) in the terminal. The number of columns
   # must be at least `2`, while using a value of `0` for columns and lines will
   # fall back to the window manager's recommended size.
-  dimensions:
-    columns: 195
-    lines: 220
+  # dimensions:
+  #   columns: 195
+  #   lines: 220
 
   # Window position (changes require restart)
   #
   # Specified in number of pixels.
   # If the position is not set, the window manager will handle the placement.
-  position:
-    x: 920
-    y: 10
+  # position:
+  #   x: 920
+  #   y: 10
 
   # Window padding (changes require restart)
   #
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
-  padding:
-    x: 6
-    y: 6
+  # padding:
+  #   x: 6
+  #   y: 6
 
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
