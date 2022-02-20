@@ -1,6 +1,5 @@
-# Personal Config
-# fetch master 6000
-~/./fm6000 -f ~/arch.txt
+# Created by newuser for 5.8.1
+neofetch
 
 # Enable colors and change prompt:
 autoload -U colors && colors
@@ -28,34 +27,15 @@ export PROMPT_EOL_MARK=""
 export STARSHIP_CONFIG=~/.starship/config.toml
 export STARSHIP_CACHE=~/.starship/cache
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-cdpath=($HOME/Dev $HOME/Documents)
-
-GPG_TTY=$(tty)
-export GPG_TTY
-
 # ZSH Plugins
-source ~/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# fnm
+export PATH=/home/augusto/.fnm:$PATH
+eval "`fnm env`"
+
+export GPG_TTY=$(tty)
 
 # Starship
 eval "$(starship init zsh)"
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/augusto/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/augusto/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/augusto/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/augusto/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-

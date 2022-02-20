@@ -1,7 +1,4 @@
 
-# Term
-export TERM="st-256color"
-
 # History
 export HISTFILE=~/.zsh_history
 export HISTFILESIZE=20000
@@ -18,16 +15,8 @@ source ~/Documents/dotfiles/alias.txt
 # Functions
 source ~/Documents/dotfiles/functions.txt
 
-# Nvm
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}"  ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh"  ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-
 # Go
 export PATH=$PATH:/usr/local/go/bin
-
-# Deno
-export DENO_INSTALL="/home/augusto/.deno"
-export PATH="$DENO_INSTALL/bin:$PATH"
 
 # Laravel
 export PATH="$PATH:/home/augusto/.config/composer/vendor/bin"

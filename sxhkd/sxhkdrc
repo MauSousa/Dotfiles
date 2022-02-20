@@ -6,21 +6,13 @@
 super + Return
 	st
 
-# second terminal emulator
-super + shift + Return
-  kitty
-
-# third terminal emulator
+# alacritty
 super + alt + Return
   alacritty
 
 # program launcher
-super + shift + d
-  dmenu_run
-
-# program launcher (Apps)
-super + d
-	rofi -show drun -show-icons JetBrains Mono
+super + @space
+	dmenu_run -h 27
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -132,27 +124,21 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-# volume control
+# Audio
 XF86AudioLowerVolume
-  pulsemixer --change-volume -5
+  pamixer -d 5
 XF86AudioRaiseVolume
-	pulsemixer --change-volume +5
+  pamixer -i 5
 XF86AudioMute
-  pulsemixer --toggle-mute
+  pamixer -t
 
-# brightness control
-XF86MonBrightnessDown
-	sudo xbacklight -dec 5
-XF86MonBrightnessUp
-	sudo xbacklight -inc 5
+# Rofi
+super + d
+  dmenu_run -h 27
 
-# lock screen
-super + x
-	betterlockscreen -l 
-
-# qutebrowser
-ctrl + shift + f
-	qutebrowser
+# Thunar
+ctrl + alt + Return
+  thunar
 
 # Discord
 ctrl + shift + d
@@ -162,31 +148,23 @@ ctrl + shift + d
 ctrl + shift + b
 	firefox-developer-edition
 
-# Thunar
-ctrl + alt + Return
-  thunar
-
 # Nitrogen
 super + ctrl + n
   nitrogen
 
-# Obs
-super + alt + o
-  obs
-
-# Spotify
-ctrl + alt + s
-  spotify
-
-# Zathura
-ctrl + alt + p
-  zathura
+# Chromium
+ctrl + alt + c
+  chromium
 
 # Bitwarden
 ctrl + alt + b
   bitwarden-desktop
 
-# Chromium
-ctrl + alt + c
-  chromium
+# Zathura
+ctrl + alt + p
+  zathura
+
+# Betterlockscreen
+super + x
+  betterlockscreen -l
 

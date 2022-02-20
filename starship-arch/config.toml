@@ -66,8 +66,8 @@ modified = " "
 # modified = "📝"
 staged = '[++\($count\)](green)'
 renamed = "👅"
-deleted = " "
-# deleted = ""
+# deleted = " "
+deleted = " "
 # deleted = "🗑️"
 # deleted = "🗑"
 

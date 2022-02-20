@@ -24,7 +24,7 @@ env:
   TERM: xterm-256color
 
 window:
-  # opacity: 0.50
+  opacity: 0.80
   # Window dimensions (changes require restart)
   #
   # Number of lines/columns (not pixels) in the terminal. The number of columns
@@ -103,7 +103,7 @@ scrolling:
 
 # Font configuration
 font:
-  size: 15.0
+  size: 11.0
   # Normal (roman) font face
   normal:
     # Font family
@@ -512,7 +512,7 @@ schemes:
 # *solarized-dark
 # *tomorrow-night
 
-colors: *monokai-pro
+colors: *dracula
 
 #######################################
 ##       END OF COLOR SCHEMES        ##
