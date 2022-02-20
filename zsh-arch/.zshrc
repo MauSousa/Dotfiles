@@ -28,8 +28,8 @@ export STARSHIP_CONFIG=~/.starship/config.toml
 export STARSHIP_CACHE=~/.starship/cache
 
 # ZSH Plugins
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.config/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.config/./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # fnm
 export PATH=/home/augusto/.fnm:$PATH
