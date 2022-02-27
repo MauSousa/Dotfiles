@@ -62,7 +62,7 @@ font-4 = FontAwesome:fontformat=truetype:scale=7:antialias=false;
 
 modules-left = bspwm 
 modules-center =
-modules-right = filesystem pulseaudio xkeyboard memory cpu battery date time
+modules-right = xkeyboard battery date time
 
 ;tray-position = right
 ;tray-padding = 2
@@ -160,7 +160,7 @@ interval = 25
 
 mount-0 = /home
 
-label-mounted = 🏠 %percentage_used%%
+label-mounted = 💾 %used% / %total%
 ; label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
@@ -278,7 +278,17 @@ interval = 2
 format-prefix = "🧠 "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #f90000
-label = %percentage:2%%
+label = %percentage%%
+format = <label> <ramp-coreload>
+ramp-coreload-spacing = 1
+ramp-coreload-0 = ▁
+ramp-coreload-1 = ▂
+ramp-coreload-2 = ▃
+ramp-coreload-3 = ▄
+ramp-coreload-4 = ▅
+ramp-coreload-5 = ▆
+ramp-coreload-6 = ▇
+ramp-coreload-7 = █
 
 [module/memory]
 type = internal/memory
@@ -427,7 +437,7 @@ format-charging-underline = #ffb52a
 format-discharging = <animation-discharging> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
 
-format-full-prefix = " "
+format-full-prefix = " "
 format-full-prefix-foreground = ${colors.white}
 format-full-underline = ${self.format-charging-underline}
 
@@ -436,19 +446,19 @@ ramp-capacity-1 = 
 ramp-capacity-2 = 
 ramp-capacity-foreground = ${colors.foreground-alt}
 
-animation-charging-0 =  
-animation-charging-1 =  
-animation-charging-2 =  
-animation-charging-3 =  
-animation-charging-4 =   
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
 animation-charging-foreground = ${colors.white}
 animation-charging-framerate = 750
 
-animation-discharging-0 =  
-animation-discharging-1 =  
-animation-discharging-2 =  
-animation-discharging-3 =  
-animation-discharging-4 =  
+animation-discharging-0 = 
+animation-discharging-1 = 
+animation-discharging-2 = 
+animation-discharging-3 = 
+animation-discharging-4 = 
 animation-discharging-foreground = ${colors.white}
 animation-discharging-framerate = 750
 
@@ -478,7 +488,7 @@ expand-right = true
 
 format-spacing = 1
 
-label-open = 
+label-open = 🔐
 label-open-foreground = ${colors.white}
 label-close =  cancel
 label-close-foreground = ${colors.alert}
@@ -512,7 +522,7 @@ type = custom/script
 interval = 2
 ; label-active-font = 5
 ;format-prefix = "🧠 "
-format-prefix = " "
+format-prefix = "👹 "
 ; format-prefix = " "
 ;format-prefix = " "
 format-underline = #9e5913
