@@ -24,8 +24,8 @@ setopt PROMPT_SP
 export PROMPT_EOL_MARK=""
 
 # Starship config file
-export STARSHIP_CONFIG=~/.starship/config.toml
-export STARSHIP_CACHE=~/.starship/cache
+export STARSHIP_CONFIG=~/.config/starship/config.toml
+export STARSHIP_CACHE=~/.config/starship/cache
 
 # ZSH Plugins
 source ~/.config/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
