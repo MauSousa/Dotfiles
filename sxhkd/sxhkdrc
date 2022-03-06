@@ -12,7 +12,7 @@ super + alt + Return
 
 # program launcher
 super + @space
-	dmenu_run -h 27 -fn "JetBrains Mono"
+  dmenu_run -g 3 -l 5 -fn "JetBrains Mono"
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -134,7 +134,7 @@ XF86AudioMute
 
 # Rofi
 super + d
-  dmenu_run -h 27 -fn "JetBrains Mono"
+  dmenu_run -g 3 -l 5 -fn "JetBrains Mono"
 
 # Thunar
 ctrl + alt + Return

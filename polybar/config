@@ -28,7 +28,7 @@ primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
 white = #fff
-empty = #000
+empty = #7a4f73
 
 [bar/example]
 monitor = ${env:MONITOR:eDP-1}
@@ -56,9 +56,9 @@ module-margin-right = 2
 
 font-0 = fixed:pixelsize=17;1
 font-1 = Noto Color Emoji:fontformat=truetype:scale=6:antialias=false;
-font-2 = Symbola:fontformat=truetype:scale=6:antialias=false;
-font-3 = JetBrains Mono:fontformat=truetype:size=30:antialias=false;0
-font-4 = FontAwesome:fontformat=truetype:scale=5:antialias=false;
+font-2 = Symbola:fontformat=truetype:scale=8:antialias=false;
+font-3 = JetBrains Mono:fontformat=truetype:size=15:antialias=false;0
+font-4 = FontAwesome:fontformat=truetype:scale=8:antialias=false;
 
 modules-left = bspwm 
 modules-center =
@@ -136,6 +136,8 @@ cursor-scroll = ns-resize
 
 [module/xwindow]
 type = internal/xwindow
+; label = %title%
+; label-maxlen = 9 
 label = %title:0:30:...%
 
 [module/xkeyboard]
@@ -187,7 +189,7 @@ label-focused-padding = 3
 
 label-occupied = %icon%
 label-occupied-padding = 3
-label-occupied-background = ${colors.empty}
+label-occupied-underline = ${colors.empty}
 
 label-urgent = %index%!
 label-urgent-background = ${colors.alert}
