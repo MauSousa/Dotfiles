@@ -1,5 +1,5 @@
 # Created by newuser for 5.8.1
-neofetch
+~/fm6000 -f ~/arch.txt -c random
 
 # Enable colors and change prompt:
 autoload -U colors && colors
