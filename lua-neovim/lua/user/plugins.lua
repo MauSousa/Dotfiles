@@ -58,6 +58,7 @@ return packer.startup(function(use)
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
+  use 'goolord/alpha-nvim'
 
   -- colorscheme
   use "lunarvim/colorschemes"

@@ -9,4 +9,5 @@ require "user.treesitter"
 require "user.autopairs"
 require "user.nvim-tree"
 require "user.bufferline"
+require "user.alpha"
 
