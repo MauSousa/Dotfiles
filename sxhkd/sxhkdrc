@@ -168,3 +168,10 @@ ctrl + alt + p
 super + x
   betterlockscreen -l
 
+# virt manager
+ctrl + alt + v
+  virt-manager
+
+# rofi
+super + shift + d
+  rofi -show drun -show-icons -font "JetBrains Mono 12"
