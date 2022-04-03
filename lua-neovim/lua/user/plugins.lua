@@ -59,6 +59,7 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
   use 'goolord/alpha-nvim'
+  use 'lewis6991/impatient.nvim'
 
   -- colorscheme
   use "lunarvim/colorschemes"
