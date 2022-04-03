@@ -8,7 +8,7 @@ $HOME/.config/polybar/launch.sh
 
 picom &
 
-feh --bg-fill ~/Pictures/wallpapers-master/0305.jpg -bg-fill ~/Pictures/wallpapers-master/0213.jpg
+feh --bg-fill ~/Pictures/wallpapers-master/0042.jpg -bg-fill ~/Pictures/wallpapers-master/0213.jpg
 
 picom --experimental-backends &
 

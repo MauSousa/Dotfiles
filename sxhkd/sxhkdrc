@@ -132,6 +132,12 @@ XF86AudioRaiseVolume
 XF86AudioMute
   pamixer -t
 
+# Brightness 
+F2
+  brightnessctl s 50-
+F3
+  brightnessctl s 50+
+
 # Rofi
 super + d
   dmenu_run -g 3 -l 5 -fn "JetBrains Mono"
