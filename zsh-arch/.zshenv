@@ -24,4 +24,3 @@ export PATH="$PATH:/home/augusto/.config/composer/vendor/bin"
 # Symfony
 export PATH="$HOME/.symfony/bin:$PATH"
 
-. "$HOME/.cargo/env"
