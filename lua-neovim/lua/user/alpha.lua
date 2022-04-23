@@ -19,7 +19,7 @@ dashboard.section.buttons.val = {
 	dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
 	dashboard.button("p", "  Update plugins", ":e ~/.config/nvim/lua/user/plugins.lua <CR> :w <CR>"),
 	dashboard.button("r", "  Recently used files", ":Telescope oldfiles <CR>"),
-	dashboard.button("t", "  Find text", ":Telescope live_grep <CR>"),
+	dashboard.button("b", "  Bspwm config", ":e ~/.config/bspwm/bspwmrc <CR>"),
 	dashboard.button("c", "  Configuration", ":e ~/.config/nvim/init.lua <CR>"),
 	dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
 }
