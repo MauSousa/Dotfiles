@@ -87,7 +87,11 @@ return packer.startup(function(use)
   use "p00f/nvim-ts-rainbow"
 
   -- Lightline status
-  use "itchyny/lightline.vim"
+  -- use "itchyny/lightline.vim"
+
+  -- vim Airline
+  use "vim-airline/vim-airline"
+  use "vim-airline/vim-airline-themes"
 
   -- icons for lightline
   use "ryanoasis/vim-devicons"
@@ -105,7 +109,12 @@ return packer.startup(function(use)
   use "kyazdani42/nvim-web-devicons" -- icons
 
   -- Buferline
-  use "akinsho/bufferline.nvim"
+  -- use "akinsho/bufferline.nvim"
+  use {
+    "akinsho/bufferline.nvim",
+    tag = "v2.*",
+    requires = 'kyazdani42/nvim-web-devicons'
+  }
   use "moll/vim-bbye"
 
   -- Automatically set up your configuration after cloning packer.nvim
