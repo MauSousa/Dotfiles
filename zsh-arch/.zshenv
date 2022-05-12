@@ -1,4 +1,3 @@
-
 # History
 export HISTFILE=~/.zsh_history
 export HISTFILESIZE=20000
@@ -20,7 +19,4 @@ export PATH=$PATH:/usr/local/go/bin
 
 # Laravel
 export PATH="$PATH:/home/augusto/.config/composer/vendor/bin"
-
-# Symfony
-export PATH="$HOME/.symfony/bin:$PATH"
 
