@@ -2,18 +2,20 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-nm-applet &
-
-$HOME/.config/polybar/launch.sh
-
 picom &
-
-feh --bg-fill ~/Pictures/wallpapers-master/0042.jpg -bg-fill ~/Pictures/wallpapers-master/0213.jpg
 
 picom --experimental-backends &
 
-bspc monitor eDP-1 -d I II III IV V
-bspc monitor HDMI-1 -d VI VII VIII IX X
+feh --bg-fill ~/Pictures/wallpapers-master/0053.jpg --bg-fill ~/Pictures/wallpapers-master/0213.jpg
+
+$HOME/.config/polybar/launch.sh
+
+nm-applet &
+
+blueberry-tray &
+
+bspc monitor eDP -d I II III IV V
+bspc monitor HDMI-A-0 -d VI VII VIII IX X
 
 bspc config border_width         3
 bspc config window_gap          10
@@ -34,3 +36,5 @@ bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
+
+xsetroot -cursor_name left_ptr &
