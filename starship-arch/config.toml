@@ -71,7 +71,7 @@ staged = '[++$count](green) '
 renamed = "👅"
 # deleted = " "
 # deleted = " "
-deleted = '[$count](bold red) '
+deleted = '[D$count](bold red) '
 # deleted = "🗑️ "
 # deleted = "🗑"
 
