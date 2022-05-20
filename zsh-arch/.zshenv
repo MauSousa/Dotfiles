@@ -16,6 +16,8 @@ source ~/Documents/dotfiles/functions.txt
 
 # Go
 export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$(go env GOPATH)
+export GOBIN=$(go env GOPATH)/bin
 
 # Laravel
 export PATH="$PATH:/home/augusto/.config/composer/vendor/bin"
