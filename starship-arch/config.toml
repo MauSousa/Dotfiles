@@ -7,7 +7,8 @@ scan_timeout = 10
 
 # Replace the "❯" symbol in the prompt with "➜"
 [character]                            # The name of the module we are configuring is "character"
-success_symbol = "[❯](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+success_symbol = "[❯](yellow)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+# success_symbol = "[❯](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
 #success_symbol = "[∮](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
 error_symbol = "[✗](bold red) "
 
@@ -26,7 +27,7 @@ style = "123"
 [directory]
 truncation_length = 8
 truncate_to_repo = false
-style = "bold 117"
+style = "117"
 read_only = " "
 home_symbol = "~"
 #home_symbol = " "
@@ -40,7 +41,7 @@ style = "189"
 
 # Git Branch
 [git_branch]
-style = "bold 9"
+style = "9"
 
 # Git Status
 [git_status]
@@ -67,8 +68,9 @@ stashed = "📦"
 modified = '[U$count](white) '
 # modified = '📜[++\($count\)](green)'
 # modified = "📝"
-staged = '[++$count](green) '
-renamed = "👅"
+staged = '[S++$count](green)'
+renamed = '[R++$count](blue) '
+# renamed = "👅"
 # deleted = " "
 # deleted = " "
 deleted = '[D$count](bold red) '
@@ -125,4 +127,7 @@ symbol = " "
 symbol = "ﯣ "
 
 [lua]
-format = "via [ ($version)](bold blue) "
+format = "via [ ($version)](blue) "
+
+[c]
+style = "149"
