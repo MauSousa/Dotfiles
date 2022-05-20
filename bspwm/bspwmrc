@@ -6,13 +6,13 @@ picom &
 
 picom --experimental-backends &
 
-feh --bg-fill ~/Pictures/wallpapers-master/0053.jpg --bg-fill ~/Pictures/wallpapers-master/0213.jpg
+feh --bg-fill ~/Pictures/wallpapers-master/0053.jpg --bg-fill ~/Pictures/wallpapers-master/0298.jpg
 
 $HOME/.config/polybar/launch.sh
 
-nm-applet &
+# nm-applet &
 
-blueberry-tray &
+# blueberry-tray &
 
 bspc monitor eDP -d I II III IV V
 bspc monitor HDMI-A-0 -d VI VII VIII IX X
