@@ -21,6 +21,7 @@ dashboard.section.buttons.val = {
   dashboard.button("r", "  Recently used files", ":Telescope oldfiles <CR>"),
   dashboard.button("b", "  Bspwm config", ":e ~/.config/bspwm/bspwmrc <CR>"),
   dashboard.button("c", "  Configuration", ":e ~/.config/nvim/init.lua <CR>"),
+  dashboard.button("df", "  Dotfiles", ":e ~/Documents/dotfiles/ <CR>"),
   dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
 }
 
