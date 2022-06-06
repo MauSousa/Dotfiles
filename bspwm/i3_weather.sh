@@ -1,10 +1,8 @@
-#!/bin/sh
-# i3block for displaying the current temperature, humidity and precipitation, if wttr.in i unavailable then WEATHER UNAVAILABLE will be displayed
+#!/usr/bin/env bash
 
 weather=$(curl -s wttr.in/Mexico_City?format=3)
-
-if [ $(echo "$weather" | grep -E "(Unknown|curl|HTML)" | wc -l) -gt 0 ]; then
-    echo "WEATHER UNAVAILABLE"
+if [ $(echo "$weather" | grep -E "(Unkwown|curl|HTML)" | wc -l) -gt 0 ]; then
+	echo "Weather unavailable"
 else
-    echo "$weather" | awk '{print " "$3}'
+	echo "$weather" | awk '{print " "$3}'
 fi
