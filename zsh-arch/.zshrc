@@ -1,6 +1,5 @@
 # Enable colors and change prompt:
-autoload -U colors && colors
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+# autoload -U colors && colors
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -21,7 +20,7 @@ setopt PROMPT_SP
 export PROMPT_EOL_MARK=""
 
 # Starship config file
-export STARSHIP_CONFIG=~/.config/starship/config.toml
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
 export STARSHIP_CACHE=~/.config/starship/cache
 
 # fnm
@@ -30,7 +29,7 @@ eval "`fnm env`"
 
 # zsh plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.config/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # gpg agent
 export GPG_TTY=$(tty)
@@ -39,15 +38,15 @@ eval "$(starship init zsh)"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/augusto/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/augusto/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/augusto/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/augusto/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
+# __conda_setup="$('/home/augusto/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#     eval "$__conda_setup"
+# else
+#     if [ -f "/home/augusto/anaconda3/etc/profile.d/conda.sh" ]; then
+#         . "/home/augusto/anaconda3/etc/profile.d/conda.sh"
+#     else
+#         export PATH="/home/augusto/anaconda3/bin:$PATH"
+    # fi
+# fi
+# unset __conda_setup
 # <<< conda initialize <<<
