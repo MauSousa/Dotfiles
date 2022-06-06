@@ -22,6 +22,7 @@ dashboard.section.buttons.val = {
   dashboard.button("b", "  Bspwm config", ":e ~/.config/bspwm/bspwmrc <CR>"),
   dashboard.button("c", "  Configuration", ":e ~/.config/nvim/init.lua <CR>"),
   dashboard.button("df", "  Dotfiles", ":e ~/Documents/dotfiles/ <CR>"),
+  dashboard.button("du", "  St", ":e ~/.config/suckless/st-0.8.5/config.h <CR>"),
   dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
 }
 
