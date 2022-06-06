@@ -20,8 +20,8 @@ export GOPATH=$(go env GOPATH)
 export GOBIN=$(go env GOPATH)/bin
 
 # Laravel
-export PATH="$PATH:/home/augusto/.config/composer/vendor/bin"
-export LARAVEL_PATH="/home/augusto/Dev/laravel/"
+# export PATH="$PATH:/home/augusto/.config/composer/vendor/bin"
+# export LARAVEL_PATH="/home/augusto/Dev/laravel/"
 
 # Platzi
-export PLATZI="/home/augusto/Dev/platzi/"
+# export PLATZI="/home/augusto/Dev/platzi/"
