@@ -6,16 +6,18 @@ picom &
 
 picom --experimental-backends &
 
-feh --bg-fill ~/Pictures/wallpapers-master/0053.jpg --bg-fill ~/Pictures/wallpapers-master/0298.jpg
+feh --bg-fill ~/Pictures/wallpapers-master/0053.jpg
 
 $HOME/.config/polybar/launch.sh
 
-# nm-applet &
+nm-applet &
 
 # blueberry-tray &
 
-bspc monitor eDP -d I II III IV V
-bspc monitor HDMI-A-0 -d VI VII VIII IX X
+#bspc monitor eDP -d I II III IV V
+#bspc monitor HDMI-A-0 -d VI VII VIII IX X
+bspc monitor -d I II III IV V VI VII VIII IX X
+
 
 bspc config border_width         3
 bspc config window_gap          10
