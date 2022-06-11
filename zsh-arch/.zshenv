@@ -19,6 +19,9 @@ export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$(go env GOPATH)
 export GOBIN=$(go env GOPATH)/bin
 
+# Local bin
+export PATH="$HOME/.local/bin:$PATH"
+
 # Laravel
 # export PATH="$PATH:/home/augusto/.config/composer/vendor/bin"
 # export LARAVEL_PATH="/home/augusto/Dev/laravel/"
