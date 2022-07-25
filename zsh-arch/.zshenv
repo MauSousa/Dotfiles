@@ -18,12 +18,13 @@ source ~/Documents/dotfiles/functions.txt
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$(go env GOPATH)
 export GOBIN=$(go env GOPATH)/bin
+export PATH=$HOME/go/bin/:$PATH
 
 # Local bin
-export PATH="$HOME/.local/bin:$PATH"
+export PATH=$HOME/.local/bin:$PATH
 
 # Laravel
-export PATH="$PATH:/home/augusto/.config/composer/vendor/bin"
+# export PATH=$PATH:/home/augusto/.config/composer/vendor/bin
 # export LARAVEL_PATH="/home/augusto/Dev/laravel/"
 
 # Platzi
