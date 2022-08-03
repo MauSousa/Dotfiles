@@ -9,10 +9,10 @@ setopt HISTIGNOREALLDUPS
 setopt INC_APPEND_HISTORY
 
 # Alias
-source ~/Documents/dotfiles/alias.txt
+source ~/.config/dotfiles/alias.txt
 
 # Functions
-source ~/Documents/dotfiles/functions.txt
+source ~/.config/dotfiles/functions.txt
 
 # Go
 export PATH=$PATH:/usr/local/go/bin
