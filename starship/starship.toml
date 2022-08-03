@@ -16,7 +16,8 @@ error_symbol = "[✗](bold red) "
 [package]
 disabled = false
 style = "119"
-symbol = " "
+symbol = "📦"
+# symbol = " "
 
 # Python
 [python]
@@ -87,7 +88,11 @@ symbol = " "
 symbol = " "
 
 [docker_context]
-symbol = " "
+disabled = false
+format = "via [🐳 $context](blue bold)"
+# symbol = "🐳"
+# detect_files = ["docker-compose.yml", "docker-compose.yaml", "Dockerfile"]
+# symbol = " "
 
 [elixir]
 symbol = " "
