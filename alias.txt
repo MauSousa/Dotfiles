@@ -1,10 +1,5 @@
 # Directory related
-alias l="lsd --group-dirs=first"
-alias ll="lsd -h --group-dirs=first"
-alias la="lla"
-alias lla="lsd -lAh --group-dirs=first"
-alias ls="lsd -lAh --group-dirs=first"
-alias la="lsd -a --group-dirs=first"
+alias ls="exa --icons --group-directories-first --header -al"
 alias exat="exa -aT --color=always --group-directories-first"
 
 # System related
@@ -20,39 +15,21 @@ alias psearch="paru -Ss"
 alias souenv="source env/bin/activate"
 alias zshenv="source ~/.zshenv"
 alias zshrc="source ~/.zshrc"
-alias plugins="nvim ~/.config/nvim/lua/user/plugins.lua"
+alias rm="rm -iv"
 
 #  Git
 alias pull="git pull"
 alias push="git push origin main"
-alias commit="git commit -m"
-alias add="git add ."
-alias gaddm="git commit -am"
-alias gaddf="git add"
+alias commit="git commit"
+alias gadd="git add ."
 alias ginit="git init"
 alias gitbr="git branch"
 alias gits="git s"
+alias gitd="git diff"
 alias gitchk="git checkout"
 alias gitsw="git switch"
+alias gitst="git stash"
+alias gitstc="git stash clear"
 
-# Npm
-alias start="npm start"
-alias build="npm run build"
-alias build:dev="npm run build:dev"
-
-# Tmux
-#alias pst="ps -e | grep "tmux""
-#alias tas="tmux attach-session"
-
-# Screenshot with flameshot
-alias flamegui="flameshot gui"
-
-# Golang
-alias gt="gr"
-alias gti="go mod tidy"
-
-# Vite
-alias nrd="npm run dev"
-alias nrb="npm run build"
-alias vinit="npm init vite@latest"
-
+# Laravel
+alias laravel_new="composer create-project laravel/laravel"
