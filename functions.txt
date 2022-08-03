@@ -17,23 +17,22 @@ function rmk() {
 
 # Function to copy and push dotfiles to repository
 function cdf() {
- cp ~/.zshrc ~/.zshenv ~/.config/arch-dotfiles/zsh-arch; cp ~/.config/alacritty/alacritty.yml ~//alacritty-arch; cp ~/.mongoshrc.js /home/$USER/Documents/dotfiles/mongo-arch; cp ~/.config/lsd/config.yaml /home/$USER/Documents/dotfiles/lsd-arch; cp ~/.starship/config.toml /home/$USER/Documents/dotfiles/starship-arch; cp ~/.config/kitty/diff.conf ~/.config/kitty/kitty.conf ~/.config/kitty/dracula.conf /home/$USER/Documents/dotfiles/kitty; cp ~/fm6000 ~/Documents/dotfiles; cp -r ~/.config/rofi/ ~/Documents/dotfiles/
+ cp ~/.zshrc ~/.zshenv ~/.config/dotfiles/zsh; cp ~/.config/starship/starship.toml ~/.config/dotfiles/starship/; cp -r ~/.config/rofi/ ~/.config/dotfiles/
 }
 
 # Function to copy bspwm config, polybar, sxhkdrc
 function cbc {
-	cp  ~/.config/bspwm/bspwmrc ~/Documents/dotfiles/bspwm; cp ~/.config/sxhkd/sxhkdrc ~/Documents/dotfiles/sxhkd;	cp ~/.config/polybar/config ~/.config/polybar/launch.sh ~/Documents/dotfiles/polybar; cp ~/.config/bin/ram_status.sh ~/.config/bin/kernel_info.sh ~/.config/bin/i3_weather.sh ~/Documents/dotfiles/bspwm;
-  # cp -r ~/.config/bspwm ~/.config/sxhkd	~/.config/polybar ~/.config/bin ~/Pictures /home/augusto/Documents/dotfiles/bspwm-arch
+	cp  ~/.config/bspwm/bspwmrc ~/.config/dotfiles/bspwm; cp ~/.config/sxhkd/sxhkdrc ~/.config/dotfiles/sxhkd;	cp ~/.config/polybar/config.ini ~/.config/polybar/launch.sh ~/.config/dotfiles/polybar; cp ~/.config/bin/kernel_info.sh ~/.config/bin/i3_weather.sh ~/.config/dotfiles/bin;
 }
 
 # Function to copy wallpapers
 function cpwall() {
-  cp -r ~/Pictures ~/Documents/dotfiles
+  cp -r ~/Pictures ~/.config/dotfiles
 }
 
 # Fuction to copy lua nvim config
 function cpluanvim() {
-  cp ~/.config/nvim/init.lua ~/Documents/dotfiles/lua-neovim; cp ~/.config/nvim/lua/user/*.lua ~/Documents/dotfiles/lua-neovim/lua/user; cp ~/.config/nvim/lua/user/lsp/*.lua ~/Documents/dotfiles/lua-neovim/lua/user/lsp; cp ~/.config/nvim/lua/user/lsp/settings/*.lua ~/Documents/dotfiles/lua-neovim/lua/user/lsp/settings  
+  cp ~/.config/nvim/init.lua ~/.config/dotfiles/lua-neovim; cp ~/.config/nvim/lua/user/*.lua ~/.config/dotfiles/lua-neovim/lua/user; cp ~/.config/nvim/lua/user/lsp/*.lua ~/.config/dotfiles/lua-neovim/lua/user/lsp; cp ~/.config/nvim/lua/user/lsp/settings/*.lua ~/.config/dotfiles/lua-neovim/lua/user/lsp/settings  
 }
 
 # Function to create and activate python virtual env 
@@ -44,7 +43,7 @@ function pyenv() {
 
 # Function to kill Discord process
 function kd() {
-	killall Discord && killall Discord || return
+	killall Discord && killall Discord
 }
 
 # Function to run TS files with Deno
@@ -59,5 +58,5 @@ function dnb() {
 
 # Function to remove directories
 function rd() {
-  rm -rf $1
+  rm -r $1
 }
