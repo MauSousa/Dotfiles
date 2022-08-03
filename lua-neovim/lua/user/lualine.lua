@@ -25,7 +25,7 @@ local diff = {
 
 local filetype = {
   "filetype",
-  icons_enabled = false,
+  icons_enabled = true,
 }
 
 local location = {
@@ -44,12 +44,12 @@ lualine.setup {
     theme = "auto",
     component_separators = { left = "", right = "" },
     section_separators = { left = "", right = "" },
-    disabled_filetypes = { "alpha", "dashboard" },
+    disabled_filetypes = { "alpha", "dashboard", "NvimTree" },
     always_divide_middle = true,
   },
   sections = {
     lualine_a = { "mode" },
-    lualine_b = {"branch"},
+    lualine_b = { "branch" },
     lualine_c = { diagnostics },
     lualine_x = { diff, spaces, "encoding", filetype },
     lualine_y = { location },
