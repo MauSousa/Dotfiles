@@ -30,6 +30,7 @@ alias gitchk="git checkout"
 alias gitsw="git switch"
 alias gitst="git stash"
 alias gitstc="git stash clear"
+alias gitv="git remote -v"
 
-# Laravel
-alias laravel_new="composer create-project laravel/laravel"
+# Docker
+alias dimla="docker image ls -a"
