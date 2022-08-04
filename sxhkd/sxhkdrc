@@ -124,9 +124,13 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
   bspc node -v {-20 0,0 20,0 -20,20 0}
 
-# Firefox
+# Firefox dev edition
 ctrl + shift + b
   firefox-developer-edition
+
+# Firefox
+super + ctrl + b
+  firefox
 
 # Audio
 XF86AudioLowerVolume
