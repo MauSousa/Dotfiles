@@ -22,7 +22,7 @@ function cdf() {
 
 # Function to copy bspwm config, polybar, sxhkdrc
 function cbc {
-	cp  ~/.config/bspwm/bspwmrc ~/.config/dotfiles/bspwm; cp ~/.config/sxhkd/sxhkdrc ~/.config/dotfiles/sxhkd;	cp ~/.config/polybar/config.ini ~/.config/polybar/launch.sh ~/.config/dotfiles/polybar; cp ~/.config/bin/kernel_info.sh ~/.config/bin/i3_weather.sh ~/.config/dotfiles/bin;
+	cp  ~/.config/bspwm/bspwmrc ~/.config/dotfiles/bspwm; cp ~/.config/sxhkd/sxhkdrc ~/.config/dotfiles/sxhkd;	cp ~/.config/polybar/config.ini ~/.config/polybar/launch.sh ~/.config/dotfiles/polybar; cp ~/.config/bin/kernel_info.sh ~/.config/bin/i3_weather.sh ~/.config/bin/uptime.sh ~/.config/dotfiles/bin
 }
 
 # Function to copy wallpapers
