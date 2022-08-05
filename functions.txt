@@ -22,7 +22,7 @@ function cdf() {
 
 # Function to copy bspwm config, polybar, sxhkdrc
 function cbc {
-	cp  ~/.config/bspwm/bspwmrc ~/.config/dotfiles/bspwm; cp ~/.config/sxhkd/sxhkdrc ~/.config/dotfiles/sxhkd;	cp ~/.config/polybar/config.ini ~/.config/polybar/launch.sh ~/.config/dotfiles/polybar; cp ~/.config/bin/kernel_info.sh ~/.config/bin/i3_weather.sh ~/.config/bin/uptime.sh ~/.config/dotfiles/bin
+  cp -r ~/.config/bspwm ~/.config/sxhkd ~/.config/polybar ~/.config/ranger ~/.config/bin ~/.config/dotfiles
 }
 
 # Function to copy wallpapers
@@ -32,7 +32,7 @@ function cpwall() {
 
 # Fuction to copy lua nvim config
 function cpluanvim() {
-  cp ~/.config/nvim/init.lua ~/.config/dotfiles/lua-neovim; cp ~/.config/nvim/lua/user/*.lua ~/.config/dotfiles/lua-neovim/lua/user; cp ~/.config/nvim/lua/user/lsp/*.lua ~/.config/dotfiles/lua-neovim/lua/user/lsp; cp ~/.config/nvim/lua/user/lsp/settings/*.lua ~/.config/dotfiles/lua-neovim/lua/user/lsp/settings  
+  cp -r ~/.config/nvim/ ~/.config/dotfiles
 }
 
 # Function to create and activate python virtual env 
