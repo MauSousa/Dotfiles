@@ -34,3 +34,7 @@ alias gitv="git remote -v"
 
 # Docker
 alias dimla="docker image ls -a"
+alias dclsa="docker container ls -a"
+
+# Php
+alias laravel_new="composer create-project laravel/laravel"
