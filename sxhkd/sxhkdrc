@@ -4,11 +4,14 @@
 
 # terminal emulator
 super + Return
-  st
+  alacritty
 
 # alacritty
 super + alt + Return
-  alacritty
+  st
+
+super + ctrl + Return
+  kitty
 
 # program launcher
 super + @space
