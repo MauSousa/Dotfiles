@@ -2,15 +2,17 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-# picom &
+picom &
 
-# picom --experimental-backends &
+picom --experimental-backends &
 
 feh --bg-fill ~/Pictures/wallpapers-sarosi/47.jpg ~/Pictures/wallpapers-master/0065.jpg
 
 $HOME/.config/polybar/launch.sh
 
 nm-applet &
+
+blueberry-tray &
 
 bspc monitor DisplayPort-0 -d I II III IV V
 bspc monitor HDMI-A-0 -d VI VII VIII IX X
