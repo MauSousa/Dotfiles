@@ -97,9 +97,9 @@ window:
 scrolling:
   # Maximum number of lines in the scrollback buffer.
   # Specifying '0' will disable scrolling.
-  history: 10000 
+  history: 100000
   #Scrolling distance multiplier.
-  multiplier: 3
+  multiplier: 1
 
 # Font configuration
 font:
@@ -117,8 +117,8 @@ font:
     #family: Fira Code
     #family: Hack NF
     # family: JetBrains Mono Nerd Font
-    family: JetBrains Mono
-    #family: FiraCode Nerd Font
+    #family: JetBrains Mono
+    family: FuraMono Nerd Font
     #family: Iosevka Nerd Font
     #family: Hurmit Nerd Font Mono
     #family: siji
@@ -512,7 +512,7 @@ schemes:
 # *solarized-dark
 # *tomorrow-night
 
-colors: *dracula
+colors: *tomorrow-night
 
 #######################################
 ##       END OF COLOR SCHEMES        ##
@@ -1074,7 +1074,7 @@ mouse:
 #
 # If the same trigger is assigned to multiple actions, all of them are executed
 # in the order they were defined in.
-#key_bindings:
+key_bindings:
   #- { key: Paste,                                       action: Paste          }
   #- { key: Copy,                                        action: Copy           }
   #- { key: L,         mods: Control,                    action: ClearLogNotice }
@@ -1158,7 +1158,9 @@ mouse:
   #- { key: Plus,           mods: Control,                         action: IncreaseFontSize }
   #- { key: NumpadAdd,      mods: Control,                         action: IncreaseFontSize }
   #- { key: Minus,          mods: Control,                         action: DecreaseFontSize }
-  #- { key: NumpadSubtract, mods: Control,                         action: DecreaseFontSize }
+  # - { key: NumpadSubtract, mods: Control,                         action: DecreaseFontSize }
+  - { key: J,              mods: Control|Shift,                   action: ScrollPageDown }
+  - { key: K,              mods: Control|Shift,                   action: ScrollPageUp   }
 
   # (Windows only)
   #- { key: Return,   mods: Alt,           action: ToggleFullscreen }
