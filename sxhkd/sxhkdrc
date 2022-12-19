@@ -132,7 +132,7 @@ ctrl + shift + b
   firefox-developer-edition
 
 # Firefox
-super + ctrl + b
+super + alt + b
   firefox
 
 # Audio
@@ -145,38 +145,43 @@ XF86AudioMute
 
 # Brightness
 F11
-  brightnessctl s 50-
+  pamixer -d 5
+  # brightnessctl s 50-
 F12
-  brightnessctl s 50+
+  pamixer -i 5
+  # brightnessctl s 50+
 
 # Rofi
 super + shift + d
-  rofi -show drun -show-icons -font "JetBrains Mono 12"
+  rofi -show drun -show-icons -font "FuraMono Nerd Font 12"
 
 # Thunar
-ctrl + alt + Return
-  thunar
+# ctrl + alt + Return
+#   thunar
 
 # Discord
-ctrl + shift + d
-  discord
+# ctrl + shift + d
+#   discord
 
 # Nitrogen
 super + ctrl + n
   nitrogen
 
 # Chromium
-ctrl + alt + c
-  chromium
+# ctrl + alt + c
+#   chromium
 
 # Bitwarden
-ctrl + alt + b
-  bitwarden-desktop
+# ctrl + alt + b
+#   bitwarden-desktop
 
 # Zathura
 ctrl + alt + p
   zathura
 
 # Betterlockscreen
-super + x
-  betterlockscreen -l
+# super + x
+#   betterlockscreen -l
+
+alt + s
+  alacritty -e nvim ~/.config/sxhkd/sxhkdrc
