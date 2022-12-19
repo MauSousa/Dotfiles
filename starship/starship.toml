@@ -19,6 +19,9 @@ style = "119"
 symbol = "📦"
 # symbol = " "
 
+[container]
+format = '[$symbol \[$name\]]($style) '
+
 # Python
 [python]
 symbol = " "
@@ -50,14 +53,15 @@ style = "117"
 # conflicted = " "
 conflicted = "🚩"
 # conflicted = "🏳"
-ahead = "   "
+ahead = " "
 # ahead = "🚗💨"
 # ahead = "🏎💨"
-behind = "   "
+behind = "  "
 diverged = "😵"
 # up_to_date = " "
+up_to_date = ""
 # up_to_date = ""
-up_to_date = ""
+# up_to_date = ""
 #up_to_date = "✓"
 untracked = '[?$count](red) '
 # untracked = "🤔"
@@ -66,7 +70,7 @@ untracked = '[?$count](red) '
 # stashed = " "
 stashed = "📦"
 # modified = " "
-modified = '[U$count](white) '
+modified = '[U$count](yellow) '
 # modified = '📜[++\($count\)](green)'
 # modified = "📝"
 staged = '[S++$count](green) '
@@ -90,8 +94,9 @@ symbol = " "
 [docker_context]
 disabled = false
 format = "via [🐳 $context](blue bold)"
+only_with_files = true
 # symbol = "🐳"
-# detect_files = ["docker-compose.yml", "docker-compose.yaml", "Dockerfile"]
+detect_files = ["docker-compose.yml", "docker-compose.yaml", "Dockerfile"]
 # symbol = " "
 
 [elixir]
