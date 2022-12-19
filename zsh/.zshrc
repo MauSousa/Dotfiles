@@ -1,5 +1,9 @@
 # Enable colors and change prompt:
 # autoload -U colors && colors
+source ~/.zshenv
+
+# neofetch
+nerdfetch
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -28,13 +32,12 @@ export PATH=/home/augusto/.fnm:$PATH
 eval "`fnm env`"
 
 # zsh plugins
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /bedrock/strata/arch/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /bedrock/strata/arch/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # gpg agent
 export GPG_TTY=$(tty)
-
+ 
 eval "$(starship init zsh)"
 
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+# export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

@@ -2,7 +2,8 @@
 export HISTFILE=~/.zsh_history
 export HISTFILESIZE=20000
 export HISTSIZE=20000
-export HISTTIMEFORMAT="[%F %T] "
+# export HISTTIMEFORMAT="%F %T "
+export HISTTIMEFORMAT="%d/%m/%y %T "
 export SAVEHIST=20000
 setopt EXTENDED_HISTORY
 setopt HISTIGNOREALLDUPS
@@ -24,11 +25,4 @@ export PATH=$HOME/go/bin/:$PATH
 export PATH=$HOME/.local/bin:$PATH
 
 # Goland Path
-export PATH=$HOME/Documentos/GoLand-2022.2/bin:$PATH
-
-# Laravel
-# export PATH=$PATH:/home/augusto/.config/composer/vendor/bin
-# export LARAVEL_PATH="/home/augusto/Dev/laravel/"
-
-# Platzi
-# export PLATZI="/home/augusto/Dev/platzi/"
+# export PATH=$HOME/Documentos/GoLand-2022.2/bin:$PATH
