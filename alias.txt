@@ -6,6 +6,9 @@ alias exat="exa -aT --icons --color=always --group-directories-first"
 alias ..="cd .."
 alias actualizar="sudo pacman -Syu"
 alias update="paru -Sua"
+alias fupdate="sudo dnf update"
+alias fupgrade="sudo dnf upgrade"
+alias flatupgrade="sudo flatpak upgrade"
 alias install="sudo pacman -S"
 alias pinstall="paru -S"
 alias uninstall="sudo pacman -Rs"
@@ -35,6 +38,5 @@ alias gitv="git remote -v"
 # Docker
 alias dimla="docker image ls -a"
 alias dclsa="docker container ls -a"
-
-# Php
-alias laravel_new="composer create-project laravel/laravel"
+alias dcd="docker compose down"
+alias dcu="docker compose up"
