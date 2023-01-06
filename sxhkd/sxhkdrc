@@ -152,8 +152,11 @@ F12
   # brightnessctl s 50+
 
 # Rofi
-super + shift + d
+alt + d
   rofi -show drun -show-icons -font "FuraMono Nerd Font 12"
+
+super + shift + d
+  sudo rofi -show drun -show-icons -font "FuraMono Nerd Font 12"
 
 # Thunar
 # ctrl + alt + Return
