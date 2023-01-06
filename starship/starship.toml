@@ -93,7 +93,7 @@ symbol = " "
 
 [docker_context]
 disabled = false
-format = "via [🐳 $context](blue bold)"
+format = "via [ $context](blue bold) "
 only_with_files = true
 # symbol = "🐳"
 detect_files = ["docker-compose.yml", "docker-compose.yaml", "Dockerfile"]
