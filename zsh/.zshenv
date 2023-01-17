@@ -24,5 +24,7 @@ export PATH=$HOME/go/bin/:$PATH
 # Local bin
 export PATH=$HOME/.local/bin:$PATH
 
+export PATH=$HOME/.cargo/bin:$PATH
+
 # Goland Path
 # export PATH=$HOME/Documentos/GoLand-2022.2/bin:$PATH

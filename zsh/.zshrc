@@ -3,7 +3,8 @@
 source ~/.zshenv
 
 # neofetch
-nerdfetch
+# nerdfetch
+fetch
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -41,3 +42,4 @@ export GPG_TTY=$(tty)
 eval "$(starship init zsh)"
 
 # export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
