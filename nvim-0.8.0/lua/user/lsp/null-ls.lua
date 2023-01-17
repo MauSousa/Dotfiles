@@ -22,7 +22,7 @@ null_ls.setup({
 		formatting.stylua,
 		formatting.prettierd,
 		-- diagnostics.quick-lint-js,
-		diagnostics.eslint,
+		diagnostics.eslint_d,
 	},
 	on_attach = function(client, bufnr)
 		if client.supports_method("textDocument/formatting") then

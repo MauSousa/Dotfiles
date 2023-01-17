@@ -56,6 +56,8 @@ keymap("n", "ñ.", ":w<cr>", opts)
 keymap("n", "ññ", ":wq<cr>", opts)
 keymap("i", "ññ", "<ESC>:wq<cr>", opts)
 keymap("i", "ñ.", "<ESC>:w<cr>", opts)
+keymap("i", "ñ.", "<ESC>:w<cr>", opts)
+keymap("n", "<leader>mt", ":MarkdownPreviewToggle<cr>", opts)
 
 -- Plugins --
 

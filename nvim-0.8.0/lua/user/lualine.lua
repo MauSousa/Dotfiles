@@ -30,7 +30,7 @@ local filetype = {
 
 local location = {
 	"location",
-	padding = 0,
+	left_padding = 1,
 }
 
 local spaces = function()
@@ -52,7 +52,7 @@ lualine.setup({
 		lualine_b = { "branch" },
 		lualine_c = { diagnostics },
 		lualine_x = { diff, spaces, "encoding", filetype },
-		lualine_y = { location },
-		lualine_z = { "progress" },
+		lualine_y = { "hostname" },
+		lualine_z = { location },
 	},
 })

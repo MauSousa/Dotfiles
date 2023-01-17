@@ -23,7 +23,7 @@ dashboard.section.buttons.val = {
 	dashboard.button("t", " " .. " Find text", ":Telescope live_grep <CR>"),
 	dashboard.button("c", " " .. " Config", ":e $MYVIMRC <CR>"),
 	dashboard.button("q", " " .. " Quit", ":qa<CR>"),
-	dashboard.button("+", " " .. " Sxhkd config", ":e ~/.config/sxhkd/sxhkdrc <CR>"),
+	dashboard.button("+", " " .. " Plugins", ":e ~/.config/nvim/lua/user/plugins.lua <CR>"),
 }
 local function footer()
 	return "Bedrock Linux"
