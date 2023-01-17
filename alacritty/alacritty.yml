@@ -10,6 +10,8 @@
 # to the user's home directory starting with `~/`.
 #import:
 #  - /path/to/alacritty.yml
+# import:
+# - ./alacritty-colorscheme/schemes.yaml
 
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
@@ -24,7 +26,9 @@ env:
   TERM: xterm-256color
 
 window:
-  opacity: 0.80
+  opacity: 0.9
+  # opacity: 1.0
+  # opacity: 0.8
   # Window dimensions (changes require restart)
   #
   # Number of lines/columns (not pixels) in the terminal. The number of columns
@@ -83,10 +87,10 @@ window:
 
   # Window class (Linux/BSD only):
   #class:
-    # Application instance name
-    #instance: Alacritty
-    # General application class
-    #general: Alacritty
+  # Application instance name
+  #instance: Alacritty
+  # General application class
+  #general: Alacritty
 
   # GTK theme variant (Linux/BSD only)
   #
@@ -127,36 +131,36 @@ font:
 
   # Bold font face
   #bold:
-    # Font family
-    #
-    # If the bold family is not specified, it will fall back to the
-    # value specified for the normal font.
-    #family: monospace
+  # Font family
+  #
+  # If the bold family is not specified, it will fall back to the
+  # value specified for the normal font.
+  #family: monospace
 
-    # The `style` can be specified to pick a specific face.
-    #style: Bold
+  # The `style` can be specified to pick a specific face.
+  #style: Bold
 
   # Italic font face
   #italic:
-    # Font family
-    #
-    # If the italic family is not specified, it will fall back to the
-    # value specified for the normal font.
-    #family: monospace
+  # Font family
+  #
+  # If the italic family is not specified, it will fall back to the
+  # value specified for the normal font.
+  #family: monospace
 
-    # The `style` can be specified to pick a specific face.
-    #style: Italic
+  # The `style` can be specified to pick a specific face.
+  #style: Italic
 
   # Bold italic font face
   #bold_italic:
-    # Font family
-    #
-    # If the bold italic family is not specified, it will fall back to the
-    # value specified for the normal font.
-    #family: monospace
+  # Font family
+  #
+  # If the bold italic family is not specified, it will fall back to the
+  # value specified for the normal font.
+  #family: monospace
 
-    # The `style` can be specified to pick a specific face.
-    #style: Bold Italic
+  # The `style` can be specified to pick a specific face.
+  #style: Bold Italic
 
   # Point size
   #size: 15
@@ -191,38 +195,38 @@ schemes:
   ### Doom One ###
   doom-one: &doom-one
     primary:
-      background: '#282c34'
-      foreground: '#bbc2cf'
+      background: "#282c34"
+      foreground: "#bbc2cf"
     cursor:
       text: CellBackground
-      cursor: '#528bff'
+      cursor: "#528bff"
     selection:
       text: CellForeground
-      background: '#3e4451'
+      background: "#3e4451"
     normal:
-      black:   '#1c1f24'
-      red:     '#ff6c6b'
-      green:   '#98be65'
-      yellow:  '#da8548'
-      blue:    '#51afef'
-      magenta: '#c678dd'
-      cyan:    '#5699af'
-      white:   '#202328'
+      black: "#1c1f24"
+      red: "#ff6c6b"
+      green: "#98be65"
+      yellow: "#da8548"
+      blue: "#51afef"
+      magenta: "#c678dd"
+      cyan: "#5699af"
+      white: "#202328"
     bright:
-      black:   '#5b6268'
-      red:     '#da8548'
-      green:   '#4db5bd'
-      yellow:  '#ecbe7b'
-      blue:    '#3071db'   # This is 2257a0 in Doom Emacs but I lightened it.
-      magenta: '#a9a1e1'
-      cyan:    '#46d9ff'
-      white:   '#dfdfdf'
+      black: "#5b6268"
+      red: "#da8548"
+      green: "#4db5bd"
+      yellow: "#ecbe7b"
+      blue: "#3071db" # This is 2257a0 in Doom Emacs but I lightened it.
+      magenta: "#a9a1e1"
+      cyan: "#46d9ff"
+      white: "#dfdfdf"
 
   ### Dracula ###
   dracula: &dracula
     primary:
-      background: '#282a36'
-      foreground: '#f8f8f2'
+      background: "#282a36"
+      foreground: "#f8f8f2"
     cursor:
       text: CellBackground
       cursor: CellForeground
@@ -231,272 +235,291 @@ schemes:
       cursor: CellForeground
     search:
       matches:
-        foreground: '#44475a'
-        background: '#50fa7b'
+        foreground: "#44475a"
+        background: "#50fa7b"
       focused_match:
-        foreground: '#44475a'
-        background: '#ffb86c'
+        foreground: "#44475a"
+        background: "#ffb86c"
       bar:
-        background: '#282a36'
-        foreground: '#f8f8f2'
+        background: "#282a36"
+        foreground: "#f8f8f2"
     line_indicator:
       foreground: None
       background: None
     selection:
       text: CellForeground
-      background: '#44475a'
+      background: "#44475a"
     normal:
-      black:   '#000000'
-      red:     '#ff5555'
-      green:   '#50fa7b'
-      yellow:  '#f1fa8c'
-      blue:    '#bd93f9'
-      magenta: '#ff79c6'
-      cyan:    '#8be9fd'
-      white:   '#bfbfbf'
+      black: "#000000"
+      red: "#ff5555"
+      green: "#50fa7b"
+      yellow: "#f1fa8c"
+      blue: "#bd93f9"
+      magenta: "#ff79c6"
+      cyan: "#8be9fd"
+      white: "#bfbfbf"
     bright:
-      black:   '#4d4d4d'
-      red:     '#ff6e67'
-      green:   '#5af78e'
-      yellow:  '#f4f99d'
-      blue:    '#caa9fa'
-      magenta: '#ff92d0'
-      cyan:    '#9aedfe'
-      white:   '#e6e6e6'
+      black: "#4d4d4d"
+      red: "#ff6e67"
+      green: "#5af78e"
+      yellow: "#f4f99d"
+      blue: "#caa9fa"
+      magenta: "#ff92d0"
+      cyan: "#9aedfe"
+      white: "#e6e6e6"
     dim:
-      black:   '#14151b'
-      red:     '#ff2222'
-      green:   '#1ef956'
-      yellow:  '#ebf85b'
-      blue:    '#4d5b86'
-      magenta: '#ff46b0'
-      cyan:    '#59dffc'
-      white:   '#e6e6d1'
+      black: "#14151b"
+      red: "#ff2222"
+      green: "#1ef956"
+      yellow: "#ebf85b"
+      blue: "#4d5b86"
+      magenta: "#ff46b0"
+      cyan: "#59dffc"
+      white: "#e6e6d1"
 
   ### Gruvbox dark ###
-  gruvbox-dark: &gruvbox-dark
-    # Default colors
+  gruvbox-dark: &gruvbox-dark # Default colors
     primary:
       # hard contrast: background = '0x1d2021'
-      background: '#282828'
+      background: "#282828"
       # soft contrast: background = '0x32302f'
-      foreground: '#ebdbb2'
+      foreground: "#ebdbb2"
 
     # Normal colors
     normal:
-      black:   '#282828'
-      red:     '#cc241d'
-      green:   '#98971a'
-      yellow:  '#d79921'
-      blue:    '#458588'
-      magenta: '#b16286'
-      cyan:    '#689d6a'
-      white:   '#a89984'
+      black: "#282828"
+      red: "#cc241d"
+      green: "#98971a"
+      yellow: "#d79921"
+      blue: "#458588"
+      magenta: "#b16286"
+      cyan: "#689d6a"
+      white: "#a89984"
 
     # Bright colors
     bright:
-      black:   '#928374'
-      red:     '#fb4934'
-      green:   '#b8bb26'
-      yellow:  '#fabd2f'
-      blue:    '#83a598'
-      magenta: '#d3869b'
-      cyan:    '#8ec07c'
-      white:   '#ebdbb2'
+      black: "#928374"
+      red: "#fb4934"
+      green: "#b8bb26"
+      yellow: "#fabd2f"
+      blue: "#83a598"
+      magenta: "#d3869b"
+      cyan: "#8ec07c"
+      white: "#ebdbb2"
 
-### Monokai ###
-  monokai-pro: &monokai-pro
-    # Default colors
+  ### Monokai ###
+  monokai-pro: &monokai-pro # Default colors
     primary:
-      background: '#2D2A2E'
-      foreground: '#FCFCFA'
+      background: "#2D2A2E"
+      foreground: "#FCFCFA"
 
     # Normal colors
     normal:
-      black:   '#403E41'
-      red:     '#FF6188'
-      green:   '#A9DC76'
-      yellow:  '#FFD866'
-      blue:    '#FC9867'
-      magenta: '#AB9DF2'
-      cyan:    '#78DCE8'
-      white:   '#FCFCFA'
+      black: "#403E41"
+      red: "#FF6188"
+      green: "#A9DC76"
+      yellow: "#FFD866"
+      blue: "#FC9867"
+      magenta: "#AB9DF2"
+      cyan: "#78DCE8"
+      white: "#FCFCFA"
 
     # Bright colors
     bright:
-      black:   '#727072'
-      red:     '#FF6188'
-      green:   '#A9DC76'
-      yellow:  '#FFD866'
-      blue:    '#FC9867'
-      magenta: '#AB9DF2'
-      cyan:    '#78DCE8'
-      white:   '#FCFCFA'
+      black: "#727072"
+      red: "#FF6188"
+      green: "#A9DC76"
+      yellow: "#FFD866"
+      blue: "#FC9867"
+      magenta: "#AB9DF2"
+      cyan: "#78DCE8"
+      white: "#FCFCFA"
 
   ### Nord ###
-  nord: &nord
-    # Default colors
+  nord: &nord # Default colors
     primary:
-      background: '#2E3440'
-      foreground: '#D8DEE9'
+      background: "#2E3440"
+      foreground: "#D8DEE9"
 
     # Normal colors
     normal:
-      black:   '#3B4252'
-      red:     '#BF616A'
-      green:   '#A3BE8C'
-      yellow:  '#EBCB8B'
-      blue:    '#81A1C1'
-      magenta: '#B48EAD'
-      cyan:    '#88C0D0'
-      white:   '#E5E9F0'
+      black: "#3B4252"
+      red: "#BF616A"
+      green: "#A3BE8C"
+      yellow: "#EBCB8B"
+      blue: "#81A1C1"
+      magenta: "#B48EAD"
+      cyan: "#88C0D0"
+      white: "#E5E9F0"
 
     # Bright colors
     bright:
-      black:   '#4C566A'
-      red:     '#BF616A'
-      green:   '#A3BE8C'
-      yellow:  '#EBCB8B'
-      blue:    '#81A1C1'
-      magenta: '#B48EAD'
-      cyan:    '#8FBCBB'
-      white:   '#ECEFF4'
+      black: "#4C566A"
+      red: "#BF616A"
+      green: "#A3BE8C"
+      yellow: "#EBCB8B"
+      blue: "#81A1C1"
+      magenta: "#B48EAD"
+      cyan: "#8FBCBB"
+      white: "#ECEFF4"
 
   ### Oceanic Next ###
-  oceanic-next: &oceanic-next
-    # Default colors
+  oceanic-next: &oceanic-next # Default colors
     primary:
-      background: '#1b2b34'
-      foreground: '#d8dee9'
+      background: "#1b2b34"
+      foreground: "#d8dee9"
 
     # Colors the cursor will use if `custom_cursor_colors` is true
     cursor:
-      text: '#1b2b34'
-      cursor: '#ffffff'
+      text: "#1b2b34"
+      cursor: "#ffffff"
 
     # Normal colors
     normal:
-      black:   '#343d46'
-      red:     '#EC5f67'
-      green:   '#99C794'
-      yellow:  '#FAC863'
-      blue:    '#6699cc'
-      magenta: '#c594c5'
-      cyan:    '#5fb3b3'
-      white:   '#d8dee9'
+      black: "#343d46"
+      red: "#EC5f67"
+      green: "#99C794"
+      yellow: "#FAC863"
+      blue: "#6699cc"
+      magenta: "#c594c5"
+      cyan: "#5fb3b3"
+      white: "#d8dee9"
 
     # Bright colors
     bright:
-      black:   '#343d46'
-      red:     '#EC5f67'
-      green:   '#99C794'
-      yellow:  '#FAC863'
-      blue:    '#6699cc'
-      magenta: '#c594c5'
-      cyan:    '#5fb3b3'
-      white:   '#d8dee9'
+      black: "#343d46"
+      red: "#EC5f67"
+      green: "#99C794"
+      yellow: "#FAC863"
+      blue: "#6699cc"
+      magenta: "#c594c5"
+      cyan: "#5fb3b3"
+      white: "#d8dee9"
 
   ### Solarized Light ###
-  solarized-light: &solarized-light
-    # Default colors
+  solarized-light: &solarized-light # Default colors
     primary:
-      background: '#fdf6e3' # base3
-      foreground: '#657b83' # base00
+      background: "#fdf6e3" # base3
+      foreground: "#657b83" # base00
 
     # Cursor colors
     cursor:
-      text:   '#fdf6e3' # base3
-      cursor: '#657b83' # base00
+      text: "#fdf6e3" # base3
+      cursor: "#657b83" # base00
 
     # Normal colors
     normal:
-      black:   '#073642' # base02
-      red:     '#dc322f' # red
-      green:   '#859900' # green
-      yellow:  '#b58900' # yellow
-      blue:    '#268bd2' # blue
-      magenta: '#d33682' # magenta
-      cyan:    '#2aa198' # cyan
-      white:   '#eee8d5' # base2
+      black: "#073642" # base02
+      red: "#dc322f" # red
+      green: "#859900" # green
+      yellow: "#b58900" # yellow
+      blue: "#268bd2" # blue
+      magenta: "#d33682" # magenta
+      cyan: "#2aa198" # cyan
+      white: "#eee8d5" # base2
 
     # Bright colors
     bright:
-      black:   '#002b36' # base03
-      red:     '#cb4b16' # orange
-      green:   '#586e75' # base01
-      yellow:  '#657b83' # base00
-      blue:    '#839496' # base0
-      magenta: '#6c71c4' # violet
-      cyan:    '#93a1a1' # base1
-      white:   '#fdf6e3' # base3
+      black: "#002b36" # base03
+      red: "#cb4b16" # orange
+      green: "#586e75" # base01
+      yellow: "#657b83" # base00
+      blue: "#839496" # base0
+      magenta: "#6c71c4" # violet
+      cyan: "#93a1a1" # base1
+      white: "#fdf6e3" # base3
 
   ### Solarized Dark ###
-  solarized-dark: &solarized-dark
-    # Default colors
+  solarized-dark: &solarized-dark # Default colors
     primary:
-      background: '#002b36' # base03
-      foreground: '#839496' # base0
+      background: "#002b36" # base03
+      foreground: "#839496" # base0
 
     # Cursor colors
     cursor:
-      text:   '#002b36' # base03
-      cursor: '#839496' # base0
+      text: "#002b36" # base03
+      cursor: "#839496" # base0
 
     # Normal colors
     normal:
-      black:   '#073642' # base02
-      red:     '#dc322f' # red
-      green:   '#859900' # green
-      yellow:  '#b58900' # yellow
-      blue:    '#268bd2' # blue
-      magenta: '#d33682' # magenta
-      cyan:    '#2aa198' # cyan
-      white:   '#eee8d5' # base2
+      black: "#073642" # base02
+      red: "#dc322f" # red
+      green: "#859900" # green
+      yellow: "#b58900" # yellow
+      blue: "#268bd2" # blue
+      magenta: "#d33682" # magenta
+      cyan: "#2aa198" # cyan
+      white: "#eee8d5" # base2
 
     # Bright colors
     bright:
-      black:   '#002b36' # base03
-      red:     '#cb4b16' # orange
-      green:   '#586e75' # base01
-      yellow:  '#657b83' # base00
-      blue:    '#839496' # base0
-      magenta: '#6c71c4' # violet
-      cyan:    '#93a1a1' # base1
-      white:   '#fdf6e3' # base3
+      black: "#002b36" # base03
+      red: "#cb4b16" # orange
+      green: "#586e75" # base01
+      yellow: "#657b83" # base00
+      blue: "#839496" # base0
+      magenta: "#6c71c4" # violet
+      cyan: "#93a1a1" # base1
+      white: "#fdf6e3" # base3
 
   ### Tomorrow Night ###
-  tomorrow-night: &tomorrow-night
-     # Default colors
+  tomorrow-night: &tomorrow-night # Default colors
     primary:
-      background: '#1d1f21'
-      foreground: '#c5c8c6'
+      background: "#1d1f21"
+      foreground: "#c5c8c6"
 
     # Colors the cursor will use if `custom_cursor_colors` is true
     cursor:
-      text: '#1d1f21'
-      cursor: '#ffffff'
+      text: "#1d1f21"
+      cursor: "#ffffff"
 
     # Normal colors
     normal:
-      black:   '#1d1f21'
-      red:     '#cc6666'
-      green:   '#b5bd68'
-      yellow:  '#e6c547'
-      blue:    '#81a2be'
-      magenta: '#b294bb'
-      cyan:    '#70c0ba'
-      white:   '#373b41'
+      black: "#1d1f21"
+      red: "#cc6666"
+      green: "#b5bd68"
+      yellow: "#e6c547"
+      blue: "#81a2be"
+      magenta: "#b294bb"
+      cyan: "#70c0ba"
+      white: "#373b41"
 
     # Bright colors
     bright:
-      black:   '#666666'
-      red:     '#ff3334'
-      green:   '#9ec400'
-      yellow:  '#f0c674'
-      blue:    '#81a2be'
-      magenta: '#b77ee0'
-      cyan:    '#54ced6'
-      white:   '#282a2e'
+      black: "#666666"
+      red: "#ff3334"
+      green: "#9ec400"
+      yellow: "#f0c674"
+      blue: "#81a2be"
+      magenta: "#b77ee0"
+      cyan: "#54ced6"
+      white: "#282a2e"
+
+  ### City Lights ###
+  citylights: &citylights
+    primary:
+      background: "0x171d23"
+      foreground: "0xffffff"
+    cursor:
+      text: "0xfafafa"
+      cursor: "0x008b94"
+    normal:
+      black: "0x333f4a"
+      red: "0xd95468"
+      green: "0x8bd49c"
+      blue: "0x539afc"
+      magenta: "0xb62d65"
+      cyan: "0x70e1e8"
+      white: "0xb7c5d3"
+    bright:
+      black: "0x41505e"
+      red: "0xd95468"
+      green: "0x8bd49c"
+      yellow: "0xebbf83"
+      blue: "0x5ec4ff"
+      magenta: "0xe27e8d"
+      cyan: "0x70e1e8"
+      white: "0xffffff"
 
 ######################################################################
 ## SET THEME: Choose ONE color scheme from those in the above list. ##
@@ -512,190 +535,198 @@ schemes:
 # *solarized-dark
 # *tomorrow-night
 
-colors: *tomorrow-night
+# colors: *doom-one
+# colors: *dracula
+# colors: *gruvbox-dark
+# colors: *monokai-pro
+# colors: *nord
+# colors: *oceanic-next
+# colors: *solarized-light
+# colors: *solarized-dark
+# colors: *tomorrow-night
+colors: *citylights
 
 #######################################
 ##       END OF COLOR SCHEMES        ##
 #######################################
 
-
 # Colors (Tomorrow Night)
 #colors:
-  # Default colors
-  #primary:
-  #  background: '#1d1f21'
-  #  foreground: '#c5c8c6'
+# Default colors
+#primary:
+#  background: '#1d1f21'
+#  foreground: '#c5c8c6'
 
-    # Bright and dim foreground colors
-    #
-    # The dimmed foreground color is calculated automatically if it is not
-    # present. If the bright foreground color is not set, or
-    # `draw_bold_text_with_bright_colors` is `false`, the normal foreground
-    # color will be used.
-    #dim_foreground: '#828482'
-    #bright_foreground: '#eaeaea'
+# Bright and dim foreground colors
+#
+# The dimmed foreground color is calculated automatically if it is not
+# present. If the bright foreground color is not set, or
+# `draw_bold_text_with_bright_colors` is `false`, the normal foreground
+# color will be used.
+#dim_foreground: '#828482'
+#bright_foreground: '#eaeaea'
 
-  # Cursor colors
-  #
-  # Colors which should be used to draw the terminal cursor.
-  #
-  # Allowed values are CellForeground/CellBackground, which reference the
-  # affected cell, or hexadecimal colors like #ff00ff.
-  #cursor:
-  #  text: CellBackground
-  #  cursor: CellForeground
+# Cursor colors
+#
+# Colors which should be used to draw the terminal cursor.
+#
+# Allowed values are CellForeground/CellBackground, which reference the
+# affected cell, or hexadecimal colors like #ff00ff.
+#cursor:
+#  text: CellBackground
+#  cursor: CellForeground
 
-  # Vi mode cursor colors
-  #
-  # Colors for the cursor when the vi mode is active.
-  #
-  # Allowed values are CellForeground/CellBackground, which reference the
-  # affected cell, or hexadecimal colors like #ff00ff.
-  #vi_mode_cursor:
-  #  text: CellBackground
-  #  cursor: CellForeground
+# Vi mode cursor colors
+#
+# Colors for the cursor when the vi mode is active.
+#
+# Allowed values are CellForeground/CellBackground, which reference the
+# affected cell, or hexadecimal colors like #ff00ff.
+#vi_mode_cursor:
+#  text: CellBackground
+#  cursor: CellForeground
 
-  # Search colors
-  #
-  # Colors used for the search bar and match highlighting.
-  #search:
-    # Allowed values are CellForeground/CellBackground, which reference the
-    # affected cell, or hexadecimal colors like #ff00ff.
-    #matches:
-    #  foreground: '#000000'
-    #  background: '#ffffff'
-    #focused_match:
-    #  foreground: '#ffffff'
-    #  background: '#000000'
+# Search colors
+#
+# Colors used for the search bar and match highlighting.
+#search:
+# Allowed values are CellForeground/CellBackground, which reference the
+# affected cell, or hexadecimal colors like #ff00ff.
+#matches:
+#  foreground: '#000000'
+#  background: '#ffffff'
+#focused_match:
+#  foreground: '#ffffff'
+#  background: '#000000'
 
-    #bar:
-    #  background: '#c5c8c6'
-    #  foreground: '#1d1f21'
+#bar:
+#  background: '#c5c8c6'
+#  foreground: '#1d1f21'
 
-  # Keyboard regex hints
-  #hints:
-    # Fist character in the hint label
-    #
-    # Allowed values are CellForeground/CellBackground, which reference the
-    # affected cell, or hexadecimal colors like #ff00ff.
-    #start:
-    #  foreground: '#1d1f21'
-    #  background: '#e9ff5e'
+# Keyboard regex hints
+#hints:
+# Fist character in the hint label
+#
+# Allowed values are CellForeground/CellBackground, which reference the
+# affected cell, or hexadecimal colors like #ff00ff.
+#start:
+#  foreground: '#1d1f21'
+#  background: '#e9ff5e'
 
-    # All characters after the first one in the hint label
-    #
-    # Allowed values are CellForeground/CellBackground, which reference the
-    # affected cell, or hexadecimal colors like #ff00ff.
-    #end:
-    #  foreground: '#e9ff5e'
-    #  background: '#1d1f21'
+# All characters after the first one in the hint label
+#
+# Allowed values are CellForeground/CellBackground, which reference the
+# affected cell, or hexadecimal colors like #ff00ff.
+#end:
+#  foreground: '#e9ff5e'
+#  background: '#1d1f21'
 
-  # Line indicator
-  #
-  # Color used for the indicator displaying the position in history during
-  # search and vi mode.
-  #
-  # By default, these will use the opposing primary color.
-  #line_indicator:
-  #  foreground: None
-  #  background: None
+# Line indicator
+#
+# Color used for the indicator displaying the position in history during
+# search and vi mode.
+#
+# By default, these will use the opposing primary color.
+#line_indicator:
+#  foreground: None
+#  background: None
 
-  # Selection colors
-  #
-  # Colors which should be used to draw the selection area.
-  #
-  # Allowed values are CellForeground/CellBackground, which reference the
-  # affected cell, or hexadecimal colors like #ff00ff.
-  #selection:
-  #  text: CellBackground
-  #  background: CellForeground
+# Selection colors
+#
+# Colors which should be used to draw the selection area.
+#
+# Allowed values are CellForeground/CellBackground, which reference the
+# affected cell, or hexadecimal colors like #ff00ff.
+#selection:
+#  text: CellBackground
+#  background: CellForeground
 
-  # Normal colors
-  #normal:
-  #  black:   '#1d1f21'
-  #  red:     '#cc6666'
-  #  green:   '#b5bd68'
-  #  yellow:  '#f0c674'
-  #  blue:    '#81a2be'
-  #  magenta: '#b294bb'
-  #  cyan:    '#8abeb7'
-  #  white:   '#c5c8c6'
+# Normal colors
+#normal:
+#  black:   '#1d1f21'
+#  red:     '#cc6666'
+#  green:   '#b5bd68'
+#  yellow:  '#f0c674'
+#  blue:    '#81a2be'
+#  magenta: '#b294bb'
+#  cyan:    '#8abeb7'
+#  white:   '#c5c8c6'
 
-  # Bright colors
-  #bright:
-  #  black:   '#666666'
-  #  red:     '#d54e53'
-  #  green:   '#b9ca4a'
-  #  yellow:  '#e7c547'
-  #  blue:    '#7aa6da'
-  #  magenta: '#c397d8'
-  #  cyan:    '#70c0b1'
-  #  white:   '#eaeaea'
+# Bright colors
+#bright:
+#  black:   '#666666'
+#  red:     '#d54e53'
+#  green:   '#b9ca4a'
+#  yellow:  '#e7c547'
+#  blue:    '#7aa6da'
+#  magenta: '#c397d8'
+#  cyan:    '#70c0b1'
+#  white:   '#eaeaea'
 
-  # Dim colors
-  #
-  # If the dim colors are not set, they will be calculated automatically based
-  # on the `normal` colors.
-  #dim:
-  #  black:   '#131415'
-  #  red:     '#864343'
-  #  green:   '#777c44'
-  #  yellow:  '#9e824c'
-  #  blue:    '#556a7d'
-  #  magenta: '#75617b'
-  #  cyan:    '#5b7d78'
-  #  white:   '#828482'
+# Dim colors
+#
+# If the dim colors are not set, they will be calculated automatically based
+# on the `normal` colors.
+#dim:
+#  black:   '#131415'
+#  red:     '#864343'
+#  green:   '#777c44'
+#  yellow:  '#9e824c'
+#  blue:    '#556a7d'
+#  magenta: '#75617b'
+#  cyan:    '#5b7d78'
+#  white:   '#828482'
 
-  # Indexed Colors
-  #
-  # The indexed colors include all colors from 16 to 256.
-  # When these are not set, they're filled with sensible defaults.
-  #
-  # Example:
-  #   `- { index: 16, color: '#ff00ff' }`
-  #
-  #indexed_colors: []
+# Indexed Colors
+#
+# The indexed colors include all colors from 16 to 256.
+# When these are not set, they're filled with sensible defaults.
+#
+# Example:
+#   `- { index: 16, color: '#ff00ff' }`
+#
+#indexed_colors: []
 
 # Bell
 #
 # The bell is rung every time the BEL control character is received.
 #bell:
-  # Visual Bell Animation
-  #
-  # Animation effect for flashing the screen when the visual bell is rung.
-  #
-  # Values for `animation`:
-  #   - Ease
-  #   - EaseOut
-  #   - EaseOutSine
-  #   - EaseOutQuad
-  #   - EaseOutCubic
-  #   - EaseOutQuart
-  #   - EaseOutQuint
-  #   - EaseOutExpo
-  #   - EaseOutCirc
-  #   - Linear
-  #animation: EaseOutExpo
+# Visual Bell Animation
+#
+# Animation effect for flashing the screen when the visual bell is rung.
+#
+# Values for `animation`:
+#   - Ease
+#   - EaseOut
+#   - EaseOutSine
+#   - EaseOutQuad
+#   - EaseOutCubic
+#   - EaseOutQuart
+#   - EaseOutQuint
+#   - EaseOutExpo
+#   - EaseOutCirc
+#   - Linear
+#animation: EaseOutExpo
 
-  # Duration of the visual bell flash in milliseconds. A `duration` of `0` will
-  # disable the visual bell animation.
-  #duration: 0
+# Duration of the visual bell flash in milliseconds. A `duration` of `0` will
+# disable the visual bell animation.
+#duration: 0
 
-  # Visual bell animation color.
-  #color: '#ffffff'
+# Visual bell animation color.
+#color: '#ffffff'
 
-  # Bell Command
-  #
-  # This program is executed whenever the bell is rung.
-  #
-  # When set to `command: None`, no command will be executed.
-  #
-  # Example:
-  #   command:
-  #     program: notify-send
-  #     args: ["Hello, World!"]
-  #
-  #command: None
+# Bell Command
+#
+# This program is executed whenever the bell is rung.
+#
+# When set to `command: None`, no command will be executed.
+#
+# Example:
+#   command:
+#     program: notify-send
+#     args: ["Hello, World!"]
+#
+#command: None
 
 # Background opacity
 #
@@ -703,12 +734,12 @@ colors: *tomorrow-night
 # The value `0.0` is completely transparent and `1.0` is opaque
 
 #selection:
-  # This string contains all characters that are used as separators for
-  # "semantic words" in Alacritty.
-  #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+# This string contains all characters that are used as separators for
+# "semantic words" in Alacritty.
+#semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 
-  # When set to `true`, selected text will be copied to the primary clipboard.
-  #save_to_clipboard: false
+# When set to `true`, selected text will be copied to the primary clipboard.
+#save_to_clipboard: false
 
 cursor:
   # Cursor style
@@ -765,19 +796,19 @@ live_config_reload: true
 shell:
 program: /usr/bin/zsh
 #args:
-  #- --login
-  #- -l
-  #- -c 
-  #- "tmux new -s main"
-  #- "tmux attach || tmux"
-  #- new-session
-  #- -A
-  #- -D
-  #- -s
-  #- main
-  # - new
-  # - -A
-  # - -s main
+#- --login
+#- -l
+#- -c
+#- "tmux new -s main"
+#- "tmux attach || tmux"
+#- new-session
+#- -A
+#- -D
+#- -s
+#- main
+# - new
+# - -A
+# - -s main
 
 # Startup directory
 #
@@ -798,51 +829,51 @@ mouse:
   #triple_click: { threshold: 300 }
 
   # If this is `true`, the cursor is temporarily hidden when typing.
-    hide_when_typing: true
+  hide_when_typing: true
 
 # Regex hints
 #
 # Terminal hints can be used to find text in the visible part of the terminal
 # and pipe it to other applications.
 #hints:
-  # Keys used for the hint labels.
-  #alphabet: "jfkdls;ahgurieowpq"
+# Keys used for the hint labels.
+#alphabet: "jfkdls;ahgurieowpq"
 
-  # List with all available hints
-  #
-  # Each hint must have a `regex` and either an `action` or a `command` field.
-  # The fields `mouse`, `binding` and `post_processing` are optional.
-  #
-  # The fields `command`, `binding.key`, `binding.mods` and `mouse.mods` accept
-  # the same values as they do in the `key_bindings` section.
-  #
-  # The `mouse.enabled` field controls if the hint should be underlined while
-  # the mouse with all `mouse.mods` keys held or the vi mode cursor is above it.
-  #
-  # If the `post_processing` field is set to `true`, heuristics will be used to
-  # shorten the match if there are characters likely not to be part of the hint
-  # (e.g. a trailing `.`). This is most useful for URIs.
-  #
-  # Values for `action`:
-  #   - Copy
-  #       Copy the hint's text to the clipboard.
-  #   - Paste
-  #       Paste the hint's text to the terminal or search.
-  #   - Select
-  #       Select the hint's text.
-  #   - MoveViModeCursor
-  #       Move the vi mode cursor to the beginning of the hint.
-  #enabled:
-  # - regex: "(mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)\
-  #           [^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
-  #   command: xdg-open
-  #   post_processing: true
-  #   mouse:
-  #     enabled: true
-  #     mods: None
-  #   binding:
-  #     key: U
-  #     mods: Control|Shift
+# List with all available hints
+#
+# Each hint must have a `regex` and either an `action` or a `command` field.
+# The fields `mouse`, `binding` and `post_processing` are optional.
+#
+# The fields `command`, `binding.key`, `binding.mods` and `mouse.mods` accept
+# the same values as they do in the `key_bindings` section.
+#
+# The `mouse.enabled` field controls if the hint should be underlined while
+# the mouse with all `mouse.mods` keys held or the vi mode cursor is above it.
+#
+# If the `post_processing` field is set to `true`, heuristics will be used to
+# shorten the match if there are characters likely not to be part of the hint
+# (e.g. a trailing `.`). This is most useful for URIs.
+#
+# Values for `action`:
+#   - Copy
+#       Copy the hint's text to the clipboard.
+#   - Paste
+#       Paste the hint's text to the terminal or search.
+#   - Select
+#       Select the hint's text.
+#   - MoveViModeCursor
+#       Move the vi mode cursor to the beginning of the hint.
+#enabled:
+# - regex: "(mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)\
+#           [^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
+#   command: xdg-open
+#   post_processing: true
+#   mouse:
+#     enabled: true
+#     mods: None
+#   binding:
+#     key: U
+#     mods: Control|Shift
 
 # Mouse bindings
 #
@@ -1159,8 +1190,8 @@ key_bindings:
   #- { key: NumpadAdd,      mods: Control,                         action: IncreaseFontSize }
   #- { key: Minus,          mods: Control,                         action: DecreaseFontSize }
   # - { key: NumpadSubtract, mods: Control,                         action: DecreaseFontSize }
-  - { key: J,              mods: Control|Shift,                   action: ScrollPageDown }
-  - { key: K,              mods: Control|Shift,                   action: ScrollPageUp   }
+  - { key: J, mods: Control|Shift, action: ScrollPageDown }
+  - { key: K, mods: Control|Shift, action: ScrollPageUp }
 
   # (Windows only)
   #- { key: Return,   mods: Alt,           action: ToggleFullscreen }
@@ -1186,24 +1217,23 @@ key_bindings:
   #- { key: F,              mods: Command|Control,            action: ToggleFullscreen      }
   #- { key: F,              mods: Command, mode: ~Search,     action: SearchForward         }
   #- { key: B,              mods: Command, mode: ~Search,     action: SearchBackward        }
-
 #debug:
-  # Display the time it takes to redraw each frame.
-  #render_timer: false
+# Display the time it takes to redraw each frame.
+#render_timer: false
 
-  # Keep the log file after quitting Alacritty.
-  #persistent_logging: false
+# Keep the log file after quitting Alacritty.
+#persistent_logging: false
 
-  # Log level
-  #
-  # Values for `log_level`:
-  #   - Off
-  #   - Error
-  #   - Warn
-  #   - Info
-  #   - Debug
-  #   - Trace
-  #log_level: Warn
+# Log level
+#
+# Values for `log_level`:
+#   - Off
+#   - Error
+#   - Warn
+#   - Info
+#   - Debug
+#   - Trace
+#log_level: Warn
 
-  # Print all received window events.
-  #print_events: false
+# Print all received window events.
+#print_events: false
